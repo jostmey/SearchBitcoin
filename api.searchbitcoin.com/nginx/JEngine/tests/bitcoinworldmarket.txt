@@ -1,0 +1,24 @@
+
+crawl_seed = http://www.bitcoinworldmarket.com/
+crawl_pattern = ^http:\\\/\\\/www\\\.bitcoinworldmarket\\\.com\\\/.*$
+index_pattern = ^http:\\\/\\\/www\\\.bitcoinworldmarket\\\.com\\\/products\\\/[0-9a-zA-Z\\\_\\\-]+\\\.aspx$
+
+title_selector = h1.productname
+title_offset = 0
+
+description_selector = div.fulldescription
+description_offset = 0
+
+image_selector = div.picture img
+image_offset = 0
+
+price_selector = .productPrice
+price_offset = 0
+
+category_selector = .producttags-box
+category_offset = 0
+
+#expiration_selector = 
+#expiration_offset = 
+#expiration_pattern = 
+

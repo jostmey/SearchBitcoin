@@ -1,0 +1,14 @@
+Hello,
+
+You are receiving this email from Search Bitcoin because a request was made to add your website, '%d', to our service. Search Bitcoin helps people find merchandise and services available in the bitcoin community. Many websites are now using our tools to help promote the bitcoin economy such as 'www.weusecoins.com', 'www.bitcoinme.com', and many other great websites.
+
+We are pleased to announce that your request to be added has been accepted. This means that your website will start appearing in our live feed and search results (visit 'www.searchbitcoin.com').
+
+%cPlease note that most of referral traffic and impressions will come from websites using our tools and not directly from Search Bitcoin.
+
+If you did not make this request and you want to remove your website from our service then visit 'http://www.searchbitcoin.com/vendors/remove'.
+
+Sincerely,
+Search Bitcoin Team
+
+P.S. Consider adding the BTC Economy plugin to your website to help promote the bitcoin economy. It is easy to setup.

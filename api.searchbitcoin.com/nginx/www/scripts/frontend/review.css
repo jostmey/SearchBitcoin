@@ -1,0 +1,80 @@
+/**
+ * Author: Jared L. Ostmeyer
+ * Date Started: 2011-07-30
+ * Email: jostmey@gmail.com
+ */
+
+#reviewMain
+{
+	position: relative;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.reviewHeader
+{
+	text-align: left;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 600;
+	border-bottom: 1px solid #E6E6E6;
+}
+
+.reviewItem
+{}
+
+.reviewVendor
+{}
+
+.reviewEntry
+{
+	position: relative;
+	margin-top: 2px;
+	font-size: 18px;
+}
+
+#reviewTitle
+{
+	font-style: italic;
+}
+
+#reviewAttrImage
+{
+	position: relative;
+	float: left;
+	margin-right: 15px;
+}
+
+#reviewAttrTitle
+{
+	font-size: 18px;
+	font-weight: 600;
+}
+
+#reviewAttrUrl
+{}
+
+#reviewAttrDescription
+{
+	font-size: 16px;
+}
+
+#reviewAttrCountry
+{
+	font-size: 16px;
+}
+
+#reviewAttrProvince
+{
+	font-size: 16px;
+}
+
+#reviewAttrCity
+{
+	font-size: 16px;
+}
+
+.reviewComments
+{}
+

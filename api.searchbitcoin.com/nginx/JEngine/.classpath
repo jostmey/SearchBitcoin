@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="archive/" kind="src" path=""/>
+	<classpathentry kind="src" path="archive"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/jostmey/Desktop/JEngine/lib/jsoup-1.6.1.jar"/>
+	<classpathentry kind="output" path=""/>
+</classpath>

@@ -1,0 +1,121 @@
+<?php
+
+/**
+ * Author: Jared L. Ostmeyer
+ * Date Started: 2011-07-26
+ * Email: jostmey@gmail.com
+ * Purpose: Record feedback about an item in the database.
+ * License: All rights reserved to 'Jared L. Ostmeyer'.
+ */
+
+try
+{
+	/**
+	 * Filter inputs.
+	 */
+	// Filter variable indicating if debug mode is on.
+	if(
+		!(
+			$debug=filter_input(
+				INPUT_GET,
+				'debug',
+				FILTER_VALIDATE_BOOLEAN
+			)
+		)
+	)
+		$debug=false;
+	// Filter the callback string for use with JSONP.
+	$callback=filter_input(
+		INPUT_GET,
+		'callback',
+		FILTER_SANITIZE_STRING,
+		FILTER_FLAG_STRIP_LOW | FILTER_FLAG_STRIP_HIGH
+	);
+	// Filter the item id.
+	if(!($id=filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT)))
+		throw new Exception("Missing or invalid id parameter.");
+	// Filter the vote.
+	if(!($vote=filter_input(INPUT_GET, 'vote', FILTER_SANITIZE_NUMBER_INT)))
+		throw new Exception("Missing or invalid vote parameter.");
+	if($vote != -1 && $vote != 1)
+		throw new Exception("Invalid value for 'vote'.");
+
+	/**
+	 * Save feedback.
+	 */
+	// Open the database.
+	@$database=require '../globals/db.php';
+	// Save the vote to the database.
+	if(!empty($vote) && !$debug)
+	{
+		// Limit the number of daily votes.
+		$command=$database->prepare(
+			"SELECT COUNT(*) FROM FeedbackVotes ".
+			"WHERE ip_client = :ip_client AND ADDDATE(created, INTERVAL 1 DAY) >= NOW()"
+		);
+		$command->execute(
+			array(
+				':ip_client'=>$_SERVER['REMOTE_ADDR'],
+			)
+		);
+		$row=$command->fetch();
+		if($row[0] >= 10)
+			throw new Exception("You have exceeded the maxium allowed votes per day.");
+		// Limit the number of times a person can vote on a single item.
+		$command=$database->prepare(
+			"SELECT COUNT(*) FROM FeedbackVotes ".
+			"WHERE id_item = :id_item AND ip_client = :ip_client AND ADDDATE(created, INTERVAL 3 DAY) >= NOW()"
+		);
+		$command->execute(
+			array(
+				':id_item'=>$id,
+				':ip_client'=>$_SERVER['REMOTE_ADDR'],
+			)
+		);
+		$row=$command->fetch();
+		if($row[0] >= 2)
+			throw new Exception("You have already voted on that item.");
+		// Register the vote.
+		@$database->prepare(
+			"INSERT INTO FeedbackVotes ".
+			"( id_item, vote, referrer, ip_client, created ) ".
+			"VALUES ".
+			"( :id_item, :vote, :referrer, :ip_client, NOW() ) "
+		)->execute(
+			array(
+				':id_item'=>$id,
+				':vote'=>$vote,
+				':referrer'=>$_SERVER['HTTP_REFERER'],
+				':ip_client'=>$_SERVER['REMOTE_ADDR'],
+			)
+		);
+	}
+
+	/**
+	 * Return results.
+	 */
+	// Return results.
+	$results=array(
+		'return'=>'success',
+		'messages'=>array(
+			0=>'Your feedback has been received.',
+		),
+	);
+}
+catch(Exception $exception)
+{
+	// Return results.
+	$results=array(
+		'return'=>'error',
+		'messages'=>array(
+			0=>$exception->getMessage(),
+		),
+	);
+}
+
+// Check if the data needs to be padded, and return the result.
+if(isset($callback))
+	echo "$callback(".json_encode($results).");\n";
+else
+	echo json_encode($results);
+

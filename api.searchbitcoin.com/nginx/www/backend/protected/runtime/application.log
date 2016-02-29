@@ -1,0 +1,616 @@
+2011/07/28 17:24:16 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not allowed to access this page.' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/gii/GiiModule.php:163
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(255): GiiModule->beforeControllerAction(Object(DefaultController), Object(CInlineAction))
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('')
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('gii')
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/scripts/backend/index.php/gii/
+2011/07/28 17:41:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "tools/required/edit_block_popup".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('tools/required/...')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#3 /home/dev3689/searchbitcoin.com/blocks/include_php_script/view.php(9): include('/home/dev3689/a...')
+#4 /home/dev3689/searchbitcoin.com/blocks/include_php_script/view.php(13): container()
+#5 /home/dev3689/searchbitcoin.com/updates/concrete5.4.1.1/concrete/libraries/block_view.php(297): include('/home/dev3689/s...')
+#6 /home/dev3689/searchbitcoin.com/updates/concrete5.4.1.1/concrete/tools/edit_block_popup.php(105): BlockView->render('/home/dev3689/a...')
+#7 /home/dev3689/searchbitcoin.com/updates/concrete5.4.1.1/concrete/startup/tools.php(11): include('/home/dev3689/s...')
+#8 /home/dev3689/searchbitcoin.com/updates/concrete5.4.1.1/concrete/dispatcher.php(129): require('/home/dev3689/s...')
+#9 /home/dev3689/searchbitcoin.com/concrete/startup/updated_core_check.php(6): require('/home/dev3689/s...')
+#10 /home/dev3689/searchbitcoin.com/concrete/dispatcher.php(14): require('/home/dev3689/s...')
+#11 /home/dev3689/searchbitcoin.com/index.php(2): require('/home/dev3689/s...')
+#12 {main} REQUEST_URI=/index.php/tools/required/edit_block_popup?cID=109&isGlobal=0&bID=414&arHandle=Main&btask=view_edit_mode
+2011/07/28 18:01:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "vendor".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php:477
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(262): CController->missingAction('vendor')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('vendor')
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('items/vendor')
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/scripts/backend/index.php/items/vendor/105
+2011/07/28 18:02:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "vendor/id".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendor/id')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/scripts/backend/index.php/vendor/id/105
+2011/07/28 18:02:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "vendor/0".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendor/0')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/scripts/backend/index.php/vendor/0/105
+2011/07/28 18:02:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "vendor/view".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendor/view')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/scripts/backend/index.php/vendor/105
+2011/07/28 18:02:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "id".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php:477
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(262): CController->missingAction('id')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('id')
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendors/id')
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/scripts/backend/index.php/vendors/id/105
+2011/07/28 18:02:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "id".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php:477
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(262): CController->missingAction('id')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('id')
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendors/id')
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/scripts/backend/index.php/vendors/id/105
+2011/07/28 18:02:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "id".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php:477
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(262): CController->missingAction('id')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('id')
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendors/id')
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/scripts/backend/index.php/vendors/id/105
+2011/07/28 18:03:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "id".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php:477
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(262): CController->missingAction('id')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('id')
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendors/id')
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/scripts/backend/index.php/vendors/id/105
+2011/07/28 20:58:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "feedbackReferrals".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('feedbackReferra...')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/scripts/backend/index.php/feedbackReferrals
+2011/07/28 20:58:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "feedbackReferral".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('feedbackReferra...')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/scripts/backend/index.php/feedbackReferral
+2011/07/28 20:58:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "feedbackReferrers".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('feedbackReferre...')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/scripts/backend/index.php/feedbackReferrers
+2011/07/28 20:59:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "feedbackReferrals".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('feedbackReferra...')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/scripts/backend/index.php/feedbackReferrals
+2011/07/28 20:59:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "feedbackQueries".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('feedbackQueries')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/scripts/backend/index.php/feedbackQueries
+2011/07/28 22:26:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "vendorSubmissions".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendorSubmissio...')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/scripts/backend/index.php/vendorSubmissions
+2011/07/28 22:27:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "vendorSubmissions/join".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php:281
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendorSubmissio...')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#2 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/scripts/backend/index.php/vendorSubmissions/join
+2011/07/28 22:27:39 [error] [exception.CException] exception 'CException' with message 'Property "VendorSubmissions.domain" is not defined.' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/db/ar/CActiveRecord.php(129): CComponent->__get('domain')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/helpers/CHtml.php(2063): CActiveRecord->__get('domain')
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/helpers/CHtml.php(1791): CHtml::resolveValue(Object(VendorSubmissions), 'domain')
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/helpers/CHtml.php(1199): CHtml::activeInputField('text', Object(VendorSubmissions), 'domain', Array)
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/widgets/CActiveForm.php(568): CHtml::activeTextField(Object(VendorSubmissions), 'domain', Array)
+#5 /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/views/vendorSubmissions/join.php(15): CActiveForm->textField(Object(VendorSubmissions), 'domain', Array)
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CBaseController.php(119): require('/home/dev3689/a...')
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CBaseController.php(88): CBaseController->renderInternal('/home/dev3689/a...', Array, true)
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(866): CBaseController->renderFile('/home/dev3689/a...', Array, true)
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(779): CController->renderPartial('join', Array, true)
+#10 /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorSubmissionsController.php(32): CController->render('join', Array)
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(50): VendorSubmissionsController->actionJoin()
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#13 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#14 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('join')
+#16 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendorSubmissio...')
+#17 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#18 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#19 {main} REQUEST_URI=/scripts/backend/index.php/vendorSubmissions/join
+2011/07/28 23:03:30 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/auth/CAccessControlFilter.php:158
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('addInfo')
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendorSubmissio...')
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#10 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#11 {main} REQUEST_URI=/scripts/backend/index.php/vendorSubmissions/addInfo/130?token=8fada19c1265819d8b1e430d18c3501966ca4bc3
+2011/07/28 23:03:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/auth/CAccessControlFilter.php:158
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('join')
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendorSubmissio...')
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#10 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#11 {main} REQUEST_URI=/scripts/backend/index.php/vendorSubmissions/join/
+2011/07/28 23:11:36 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/auth/CAccessControlFilter.php:158
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/auth/CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('join')
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendorSubmissio...')
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#10 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#11 {main} REQUEST_URI=/scripts/backend/index.php/vendorSubmissions/join/
+2011/07/28 23:17:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php:477
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(262): CController->missingAction('')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('')
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('frontend')
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#4 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/scripts/backend/index.php/frontend/
+2011/07/29 13:53:23 [error] [exception.CException] exception 'CException' with message 'Property "VendorSubmissions.source" is not defined.' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/db/ar/CActiveRecord.php(129): CComponent->__get('source')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/helpers/CHtml.php(2063): CActiveRecord->__get('source')
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/helpers/CHtml.php(1791): CHtml::resolveValue(Object(VendorSubmissions), 'source')
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/helpers/CHtml.php(1199): CHtml::activeInputField('text', Object(VendorSubmissions), 'source', Array)
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/widgets/CActiveForm.php(568): CHtml::activeTextField(Object(VendorSubmissions), 'source', Array)
+#5 /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/views/vendorReview/_form.php(82): CActiveForm->textField(Object(VendorSubmissions), 'source', Array)
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CBaseController.php(119): require('/home/dev3689/a...')
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CBaseController.php(88): CBaseController->renderInternal('/home/dev3689/a...', Array, true)
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(866): CBaseController->renderFile('/home/dev3689/a...', Array, true)
+#9 /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/views/vendorReview/view.php(16): CController->renderPartial('_form', Array)
+#10 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CBaseController.php(119): require('/home/dev3689/a...')
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CBaseController.php(88): CBaseController->renderInternal('/home/dev3689/a...', Array, true)
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(866): CBaseController->renderFile('/home/dev3689/a...', Array, true)
+#13 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(779): CController->renderPartial('view', Array, true)
+#14 /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php(99): CController->render('view', Array)
+#15 [internal function]: VendorReviewController->actionView('130')
+#16 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs(Object(VendorReviewController), Array)
+#17 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(VendorReviewController), Object(ReflectionMethod), Array)
+#18 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#19 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#21 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#22 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#23 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#24 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#25 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('view')
+#27 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendorReview/vi...')
+#28 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#29 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#30 {main} REQUEST_URI=/scripts/backend/index.php/vendorReview/130
+2011/07/29 13:54:14 [error] [exception.CException] exception 'CException' with message 'Property "VendorSubmissions.priority" is not defined.' in /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CComponent.php:131
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/db/ar/CActiveRecord.php(129): CComponent->__get('priority')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/helpers/CHtml.php(2063): CActiveRecord->__get('priority')
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/helpers/CHtml.php(1791): CHtml::resolveValue(Object(VendorSubmissions), 'priority')
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/helpers/CHtml.php(1199): CHtml::activeInputField('text', Object(VendorSubmissions), 'priority', Array)
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/widgets/CActiveForm.php(568): CHtml::activeTextField(Object(VendorSubmissions), 'priority', Array)
+#5 /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/views/vendorReview/_form.php(84): CActiveForm->textField(Object(VendorSubmissions), 'priority')
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CBaseController.php(119): require('/home/dev3689/a...')
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CBaseController.php(88): CBaseController->renderInternal('/home/dev3689/a...', Array, true)
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(866): CBaseController->renderFile('/home/dev3689/a...', Array, true)
+#9 /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/views/vendorReview/view.php(16): CController->renderPartial('_form', Array)
+#10 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CBaseController.php(119): require('/home/dev3689/a...')
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CBaseController.php(88): CBaseController->renderInternal('/home/dev3689/a...', Array, true)
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(866): CBaseController->renderFile('/home/dev3689/a...', Array, true)
+#13 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(779): CController->renderPartial('view', Array, true)
+#14 /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php(99): CController->render('view', Array)
+#15 [internal function]: VendorReviewController->actionView('130')
+#16 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs(Object(VendorReviewController), Array)
+#17 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(VendorReviewController), Object(ReflectionMethod), Array)
+#18 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#19 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#20 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#21 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#22 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#23 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#24 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#25 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('view')
+#27 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendorReview/vi...')
+#28 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#29 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#30 {main} REQUEST_URI=/scripts/backend/index.php/vendorReview/130
+2011/07/29 13:58:43 [error] [php] include(Item.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/dev3689/bin/yii/yii-1.1.8.r3324/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php(61): spl_autoload_call()
+#1 unknown(0): VendorReviewController->actionView()
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs()
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams()
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(134): VendorReviewController->runAction()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CAccessControlFilter->filter()
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): VendorReviewController->filterAccessControl()
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): VendorReviewController->runActionWithFilters()
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): VendorReviewController->run()
+#13 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController()
+#14 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#15 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CWebApplication->run()
+REQUEST_URI=/scripts/backend/index.php/vendorReview/130
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (61)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 13:58:44 [error] [php] include(Item.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/dev3689/bin/yii/yii-1.1.8.r3324/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php(61): spl_autoload_call()
+#1 unknown(0): VendorReviewController->actionView()
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs()
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams()
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(134): VendorReviewController->runAction()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CAccessControlFilter->filter()
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): VendorReviewController->filterAccessControl()
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): VendorReviewController->runActionWithFilters()
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): VendorReviewController->run()
+#13 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController()
+#14 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#15 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CWebApplication->run()
+REQUEST_URI=/scripts/backend/index.php/vendorReview/130
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (61)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 13:58:46 [error] [php] include(Item.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/dev3689/bin/yii/yii-1.1.8.r3324/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php(61): spl_autoload_call()
+#1 unknown(0): VendorReviewController->actionView()
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs()
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams()
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(134): VendorReviewController->runAction()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CAccessControlFilter->filter()
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): VendorReviewController->filterAccessControl()
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): VendorReviewController->runActionWithFilters()
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): VendorReviewController->run()
+#13 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController()
+#14 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#15 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CWebApplication->run()
+REQUEST_URI=/scripts/backend/index.php/vendorReview/130
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (61)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:17:13 [error] [php] include(Item.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/dev3689/bin/yii/yii-1.1.8.r3324/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php(84): spl_autoload_call()
+#1 unknown(0): VendorReviewController->actionView()
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs()
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams()
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(134): VendorReviewController->runAction()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CAccessControlFilter->filter()
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): VendorReviewController->filterAccessControl()
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): VendorReviewController->runActionWithFilters()
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): VendorReviewController->run()
+#13 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController()
+#14 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#15 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CWebApplication->run()
+REQUEST_URI=/scripts/backend/index.php/vendorReview/130
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:17:34 [error] [php] array_merge() [<a href='function.array-merge'>function.array-merge</a>]: Argument #1 is not an array (/home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php:90)
+Stack trace:
+#0 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs()
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams()
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(134): VendorReviewController->runAction()
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CAccessControlFilter->filter()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): VendorReviewController->filterAccessControl()
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): VendorReviewController->runActionWithFilters()
+#10 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): VendorReviewController->run()
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController()
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#13 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CWebApplication->run()
+REQUEST_URI=/scripts/backend/index.php/vendorReview/130
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (90)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:18:02 [warning] [application] Failed to set unsafe attribute "id" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (90)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:18:02 [warning] [application] Failed to set unsafe attribute "email_address" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (90)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:18:02 [warning] [application] Failed to set unsafe attribute "bitcoin_address" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (90)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:18:02 [warning] [application] Failed to set unsafe attribute "payment_instructions" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (90)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:18:02 [warning] [application] Failed to set unsafe attribute "country" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (90)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:18:02 [warning] [application] Failed to set unsafe attribute "province" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (90)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:18:02 [warning] [application] Failed to set unsafe attribute "city" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (90)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:21:19 [warning] [application] Failed to set unsafe attribute "id" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:21:19 [warning] [application] Failed to set unsafe attribute "email_address" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:21:19 [warning] [application] Failed to set unsafe attribute "bitcoin_address" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:21:19 [warning] [application] Failed to set unsafe attribute "payment_instructions" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:21:19 [warning] [application] Failed to set unsafe attribute "country" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:21:19 [warning] [application] Failed to set unsafe attribute "province" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:21:19 [warning] [application] Failed to set unsafe attribute "city" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:21:19 [error] [exception.CException] exception 'CException' with message 'Failed to save item
+' in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php:89
+Stack trace:
+#0 [internal function]: VendorReviewController->actionView('130')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs(Object(VendorReviewController), Array)
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(VendorReviewController), Object(ReflectionMethod), Array)
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('view')
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendorReview/vi...')
+#13 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#14 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/scripts/backend/index.php/vendorReview/130
+2011/07/29 14:23:40 [warning] [application] Failed to set unsafe attribute "id" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:23:40 [warning] [application] Failed to set unsafe attribute "email_address" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:23:40 [warning] [application] Failed to set unsafe attribute "bitcoin_address" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:23:40 [warning] [application] Failed to set unsafe attribute "payment_instructions" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:23:40 [warning] [application] Failed to set unsafe attribute "country" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:23:40 [warning] [application] Failed to set unsafe attribute "province" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:23:40 [warning] [application] Failed to set unsafe attribute "city" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:23:40 [error] [exception.CException] exception 'CException' with message 'Failed to save item
+' in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php:89
+Stack trace:
+#0 [internal function]: VendorReviewController->actionView('130')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs(Object(VendorReviewController), Array)
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(VendorReviewController), Object(ReflectionMethod), Array)
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('view')
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendorReview/vi...')
+#13 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#14 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/scripts/backend/index.php/vendorReview/130
+2011/07/29 14:23:43 [warning] [application] Failed to set unsafe attribute "id" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:23:43 [warning] [application] Failed to set unsafe attribute "email_address" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:23:43 [warning] [application] Failed to set unsafe attribute "bitcoin_address" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:23:43 [warning] [application] Failed to set unsafe attribute "payment_instructions" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:23:43 [warning] [application] Failed to set unsafe attribute "country" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:23:43 [warning] [application] Failed to set unsafe attribute "province" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:23:43 [warning] [application] Failed to set unsafe attribute "city" of "Items".
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (84)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:23:43 [error] [exception.CException] exception 'CException' with message 'Failed to save item
+' in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php:89
+Stack trace:
+#0 [internal function]: VendorReviewController->actionView('130')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs(Object(VendorReviewController), Array)
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(VendorReviewController), Object(ReflectionMethod), Array)
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('view')
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendorReview/vi...')
+#13 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#14 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/scripts/backend/index.php/vendorReview/130
+2011/07/29 14:41:13 [error] [php] include(Vendor.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (/home/dev3689/bin/yii/yii-1.1.8.r3324/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php(97): spl_autoload_call()
+#1 unknown(0): VendorReviewController->actionView()
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs()
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams()
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(134): VendorReviewController->runAction()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CAccessControlFilter->filter()
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): VendorReviewController->filterAccessControl()
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#10 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): VendorReviewController->runActionWithFilters()
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): VendorReviewController->run()
+#13 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController()
+#14 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#15 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CWebApplication->run()
+REQUEST_URI=/scripts/backend/index.php/vendorReview/130
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php (97)
+in /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php (13)
+2011/07/29 14:52:58 [error] [exception.CException] exception 'CException' with message 'Failed to vendor for item with id ''
+' in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php:111
+Stack trace:
+#0 [internal function]: VendorReviewController->actionView('130')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs(Object(VendorReviewController), Array)
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(VendorReviewController), Object(ReflectionMethod), Array)
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('view')
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendorReview/vi...')
+#13 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#14 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/scripts/backend/index.php/vendorReview/130
+2011/07/29 14:53:18 [error] [exception.CException] exception 'CException' with message 'Failed to vendor for item with id ''
+' in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php:111
+Stack trace:
+#0 [internal function]: VendorReviewController->actionView('130')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs(Object(VendorReviewController), Array)
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(VendorReviewController), Object(ReflectionMethod), Array)
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('view')
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendorReview/vi...')
+#13 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#14 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/scripts/backend/index.php/vendorReview/130
+2011/07/29 15:05:00 [error] [exception.CException] exception 'CException' with message 'Failed to set item id.
+' in /home/dev3689/api.searchbitcoin.com/scripts/backend/protected/controllers/VendorReviewController.php:99
+Stack trace:
+#0 [internal function]: VendorReviewController->actionView('131')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs(Object(VendorReviewController), Array)
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(VendorReviewController), Object(ReflectionMethod), Array)
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(1144): CFilter->filter(Object(CFilterChain))
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(283): CFilterChain->run()
+#10 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('view')
+#12 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('vendorReview/vi...')
+#13 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#14 /home/dev3689/api.searchbitcoin.com/scripts/backend/index.php(13): CApplication->run()
+#15 {main} REQUEST_URI=/scripts/backend/index.php/vendorReview/131
+2011/07/29 22:20:33 [error] [php] include(ERunActions.php): failed to open stream: No such file or directory (/home/dev3689/bin/yii/yii-1.1.8.r3324/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/dev3689/api.searchbitcoin.com/backend/protected/commands/TestCommand.php(14): spl_autoload_call()
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/console/CConsoleCommandRunner.php(63): TestCommand->run()
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/dev3689/api.searchbitcoin.com/backend/cli.php(13): CConsoleApplication->run()
+
+in /home/dev3689/api.searchbitcoin.com/backend/protected/commands/TestCommand.php (14)
+in /home/dev3689/api.searchbitcoin.com/backend/cli.php (13)
+2011/07/29 22:26:09 [error] [php] include(ERunActions.php): failed to open stream: No such file or directory (/home/dev3689/bin/yii/yii-1.1.8.r3324/framework/YiiBase.php:421)
+Stack trace:
+#0 /home/dev3689/api.searchbitcoin.com/backend/protected/commands/TestCommand.php(14): spl_autoload_call()
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/console/CConsoleCommandRunner.php(63): TestCommand->run()
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/console/CConsoleApplication.php(88): CConsoleCommandRunner->run()
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CConsoleApplication->processRequest()
+#4 /home/dev3689/api.searchbitcoin.com/backend/cli.php(13): CConsoleApplication->run()
+
+in /home/dev3689/api.searchbitcoin.com/backend/protected/commands/TestCommand.php (14)
+in /home/dev3689/api.searchbitcoin.com/backend/cli.php (13)
+2011/08/11 18:49:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in /home/dev3689/api.searchbitcoin.com/backend/protected/controllers/FrontendController.php:39
+Stack trace:
+#0 [internal function]: FrontendController->actionAddInfo('144', 'a035cfb3dca7c83...')
+#1 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CAction.php(104): ReflectionMethod->invokeArgs(Object(FrontendController), Array)
+#2 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(FrontendController), Object(ReflectionMethod), Array)
+#3 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(300): CInlineAction->runWithParams(Array)
+#4 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(278): CController->runAction(Object(CInlineAction))
+#5 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(277): CController->run('addInfo')
+#7 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/web/CWebApplication.php(136): CWebApplication->runController('frontend/addInf...')
+#8 /home/dev3689/bin/yii/yii-1.1.8.r3324/framework/base/CApplication.php(158): CWebApplication->processRequest()
+#9 /home/dev3689/api.searchbitcoin.com/backend/index.php(13): CApplication->run()
+#10 {main} REQUEST_URI=/backend/index.php/frontend/addInfo/144?token=a035cfb3dca7c831fbd23cdcf408f351e5466bf7

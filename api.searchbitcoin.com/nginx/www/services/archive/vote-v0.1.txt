@@ -1,0 +1,55 @@
+Author: Jared L. Ostmeyer
+Email: jostmey@gmail.com
+Date Started: 2011-07-30
+Purpose: Documentation for submitting a vote for an item in the database.
+
+CONTENTS:
+* INTRO:
+* EXAMPLE REQUEST AND EXPLANATION
+* EXAMPLE RESPONSE AND EXPLANATION
+
+INTRO:
+
+	Before releasing a product or service using our database you must first read the "readme" file, which located is in this
+	folder.
+
+EXAMPLE REQUEST AND EXPLANATION:
+
+	Below is an example of how to submit a vote request to our database. Be sure that you use the URL listed below when making
+	the request (notice the ".php" extension has been dropped).
+
+	 	http://api.searchbitcoin.com/services/vote?id=21550&vote=1&callback=btcvote"
+
+	This example request will cast a vote on the item with "id=21550". The vote will be an upvote as indicated by "vote=1".
+	A confirmation of the vote will be returned in a JSON formatted array padded with the callback function "btcvote"
+
+	Here is a more detailed explanation of the URL parameters. All URL parameters are optional.
+
+		id: An integer value returned from the FEED API or SEARCH API. The id value acts as the primary key for the database
+			and will identify what item was being voted on.
+		vote: An integer value an Upvote or Downvote. An upvote is cast when "vote=1" and a downvote is cast when "vote=-1".
+		callback: String giving the name of the callback function to use to pad the JSON request (JSONP). If the parameter is
+			not used then the callback function will be omitted, and request will not be padded (just JSON).
+
+EXAMPLE RESPONSE AND EXPLANATION:
+
+	Here is an example response to a vote submission.  This example response is formatted in JSON and shows that the vote was
+	rejected.
+
+		{
+			"return":"error",
+			"messages": [
+				"You have reached the maximum allowed daily votes from your address.",
+				"A server error occurred and the database connection timed-out."
+			]
+		}
+
+	Here is a description of the variables.
+
+		* return: Either "success" or "error".
+		* messages: An array of messages either confirming that a vote was accepted ("success") or providing an explanation
+			as to why a vote was rejected ("error").
+
+
+
+

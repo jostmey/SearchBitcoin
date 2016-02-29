@@ -1,0 +1,6 @@
+#!/bin/sh
+
+. scripts/export_classpaths.sh
+cd src/
+javac *.java
+

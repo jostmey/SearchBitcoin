@@ -1,0 +1,24 @@
+
+crawl_seed = http://www.jjgames.com/
+crawl_pattern = ^http:\\\/\\\/www\\\.jjgames\\\.com\\\/.*$
+index_pattern = ^http:\\\/\\\/www\\\.jjgames\\\.com\\\/product\\\/[0-9]+$
+
+title_selector = ol.breadcrumbs > li > a
+title_offset = 2
+
+description_selector = div.right_col > p
+description_offset = 0
+
+image_selector = div.main_image img
+image_offset = 0
+
+#price_selector = #best_price
+#price_offset = 0
+
+#category_selector = #product_attributes
+#category_offset = 0
+
+#expiration_selector = 
+#expiration_offset = 
+#expiration_pattern = 
+

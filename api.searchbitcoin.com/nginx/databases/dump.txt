@@ -1,0 +1,1 @@
+mysql -usearchbitcoin -pJAk22Sdn1L2pswSDqiKxla2 searchbitcoin -eSELECT Items.id, Items.url, COUNT(FeedbackReferrals.id_item) AS ocn, COUNT(FeedbackReferrals.id_item)/Items.priority AS oc FROM FeedbackReferrals, Items WHERE FeedbackReferrals.id_item = Items.id GROUP BY FeedbackReferrals.id_item ORDER BY oc DESC LIMIT 1000

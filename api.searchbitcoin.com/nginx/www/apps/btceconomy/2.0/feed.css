@@ -1,0 +1,566 @@
+/**
+ * Author: Jared L. Ostmeyer
+ * Date Started: 2011-04-25
+ * Email: jostmey@gmail.com
+ * Purpose: CSS rules that give the plugin its appearance.
+ * License: This content is released under the MIT License.
+ */
+
+/**
+ * List of CSS rules for refining the behavior of HTML tag types.
+ */
+
+	/**
+	 * Define rules for table tags.
+	 */
+	div#btceconomy_plugin_default_css_environment table
+	{
+		width: 100%;
+	}
+
+	/**
+	 * Define rules for anchor tags.
+	 */
+	div#btceconomy_plugin_default_css_environment a:link,
+	div#btceconomy_plugin_default_css_environment a:visited,
+	div#btceconomy_plugin_default_css_environment a:active,
+	div#btceconomy_plugin_default_css_environment a:hover
+	{
+		color: #2858B8;
+	}
+
+/**
+ * CSS rules for the tags that appear while the rest of the plugin loads.
+ */
+
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_loading
+	{
+		position: relative;
+		top: 0px;
+		left: 0px;
+		height: <?php echo (require 'globals/get_height.php'); ?>;
+		min-height: 225px;
+		max-height: 350px;
+		width: <?php echo (require 'globals/get_width.php'); ?>;
+		min-width: 170px;
+		max-width: 450px;
+		background-color: #FFFFFF;
+	}
+
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_loading_border
+	{
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		border: 1px solid #4072D5;
+		background-color: #FFFFFF;
+	}
+
+	div#btceconomy_plugin_default_css_environment img.btceconomy_plugin_loading
+	{
+		position: absolute;
+		top: 0px;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		margin-top: auto;
+		margin-bottom: auto;
+		margin-right: auto;
+		margin-left: auto;
+		height: 31px;
+		width: 31px;
+	}
+
+/**
+ * CSS rules for the main tags in the plugin that hold all the other tags.
+ */
+
+	/**
+	 * CSS rules for the main tag, which is the ancestor of all other tags.
+	 */
+	div#btceconomy_plugin_default_css_environment #btceconomy_plugin_main
+	{
+		position: relative;
+		top: 0px;
+		left: 0px;
+		height: <?php echo (require 'globals/get_height.php'); ?>;
+		min-height: 225px;
+		max-height: 350px;
+		width: <?php echo (require 'globals/get_width.php'); ?>;
+		min-width: 170px;
+		max-width: 450px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		background-color: #FFFFFF;
+		display: none;
+	}
+
+	div#btceconomy_plugin_default_css_environment #btceconomy_plugin_top_menu
+	{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 33px;
+		width: 100%;
+		background-image: url("<?php echo require 'globals/base_url.php'; ?>/resources/btcheader-opaque.png");
+		display: block;
+	}
+
+	/**
+	 * CSS rules for the div tag holding the feed of items for sale.
+	 */
+	div#btceconomy_plugin_default_css_environment #btceconomy_plugin_feed
+	{
+		position: absolute;
+		top: 33px;
+		bottom: 136px;
+		left: 0px;
+		right: 0px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		border-top: 1px solid #4072D5;
+		border-bottom: 0px none #FFFFFF;
+		border-left: 1px solid #4072D5;
+		border-right: 1px solid #4072D5;
+		display: block;
+	}
+
+	/**
+	 * CSS rules for the div tag holding the buttons in the main menu.
+	 */
+	div#btceconomy_plugin_default_css_environment #btceconomy_plugin_middle_menu
+	{
+		position: absolute;
+		bottom: 119px;
+		left: 0px;
+		right: 0px;
+		height: 16px;
+		overflow-x: visible;
+		overflow-y: visible;
+		border-top: 1px solid #4072D5;
+		border-bottom: 1px solid #4072D5;
+		border-left: 1px solid #4072D5;
+		border-right: 1px solid #4072D5;
+		display: block;
+	}
+
+	/**
+	 * CSS rules for the div tag enclosing the focus area.
+	 */
+	div#btceconomy_plugin_default_css_environment #btceconomy_plugin_focus
+	{
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		right: 0px;
+		height: 117px;
+		overflow-x: hidden;
+		overflow-y: auto;
+		border-top: 0px none #FFFFFF;
+		border-bottom: 1px solid #C7DBF4;
+		border-left: 1px solid #C7DBF4;
+		border-right: 1px solid #C7DBF4;
+		display: block;
+	}
+
+/**
+ * CSS rules that define the appearance of individual entries in the feed.
+ */
+
+	/**
+	 * CSS rules for the main div tag of each entry, which holds all other tags for the entry.
+	 */
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_feed_panel
+	{
+		position: relative;
+		top: -55px;
+		width: 99%;
+		height: 55px;
+		margin-top: 2px;
+		margin-bottom: 2px;
+		margin-right: auto;
+		margin-left: auto;
+		overflow-x: none;
+		overflow-y: none;
+		border-bottom: 1px solid #E0E0F4;
+	}
+
+	/** 
+	 * CSS rules for the table cell holding the image of the item.
+	 */
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_feed_image
+	{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		height: 51px;
+		width: 51px;
+	}
+
+	/**
+	 * CSS rules for the image tag for displaying the image of the item.
+	 */
+	div#btceconomy_plugin_default_css_environment img.btceconomy_plugin_feed_image
+	{
+		margin-left: auto;
+		margin-right: auto;
+		max-height: 51px;
+		max-width: 51px;
+		display: float;
+	}
+
+	/**
+	 * CSS rules defining the table cell and div tag containing the title of the item.
+	 */
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_feed_title
+	{
+		position: absolute;
+		top: 0px;
+		left: 58px;
+		right: 26px;
+		height: 16px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		text-overflow: ellipsis;
+		color: #505050;
+		vertical-align: text-top;
+		font-size: 14px;
+		font-family: "Arial";
+		line-height: 16px;
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_feed_domain
+	{
+		color: #505050;
+		font-size: 14px;
+		font-family: "Arial";
+		line-height: 16px;
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_feed_domain:hover
+	{
+		color: #3157D0;
+		font-size: 14px;
+		font-family: "Arial";
+		line-height: 16px;
+	}
+
+	/**
+	 * CSS rules defining the table cell and div tag containing a detailed description of the item.
+	 */
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_feed_description
+	{
+		position: absolute;
+		top: 20px;
+		left: 58px;
+		height: 26px;
+		right: 26px;
+		overflow-x: hidden;
+		overflow-y: hidden;
+		text-overflow: ellipsis;
+		color: #303030;
+		font-size: 12px;
+		line-height: 13px;
+		font-family: "Helvetica";
+		text-align: left;
+	}
+
+	/**
+	 * CSS rules applying to all buttons in the feed next to the item.
+	 */
+
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_feed_buttons
+	{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		width: 26px;
+		height: 55px;
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_feed_button_buy,
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_feed_button_buy:hover
+	{
+		position: absolute;
+		top: 2px;
+		right: 2px;
+		height: 18px;
+		width: 22px;
+		cursor: pointer;
+		display: block;
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_feed_button_buy
+	{
+		background-image: url("<?php echo require 'globals/base_url.php'; ?>/resources/cart-up.png");
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_feed_button_buy:hover
+	{
+		background-image: url("<?php echo require 'globals/base_url.php'; ?>/resources/cart-down.png");
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_feed_button_focus,
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_feed_button_focus:hover
+	{
+		position: absolute;
+		top: 24px;
+		right: 2px;
+		height: 16px;
+		width: 22px;
+		cursor: pointer;
+		display: block;
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_feed_button_focus
+	{
+		background-image: url("<?php echo require 'globals/base_url.php'; ?>/resources/glass-up.png");
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_feed_button_focus:hover
+	{
+		background-image: url("<?php echo require 'globals/base_url.php'; ?>/resources/glass-down.png");
+	}
+
+/**
+ * CSS rules that generate the look of the menu buttons in the middle of the plugin.
+ */
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_middle_menu_submit,
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_middle_menu_submit:hover
+	{
+		position: absolute;
+		top: 0px;
+		right: 80px;
+		display: block;
+		height: 14px;
+		width: 79px;
+		border-left: 1px solid #E0E0F4;
+		text-transform: uppercase;
+		text-align: center;
+		vertical-align: middle;
+		color: #303030;
+		padding-top: 2px;
+		font-size: 10px;
+		line-height: 14px;
+		font-family: "Arial";
+		font-weight: bold;
+		letter-spacing: 1px;
+		cursor: pointer;
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_middle_menu_submit:hover
+	{
+		background-color: #C7DBF4;
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_middle_menu_embed,
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_middle_menu_embed:hover
+	{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		display: block;
+		height: 14px;
+		width: 79px;
+		border-left: 1px solid #E0E0F4;
+		text-transform: uppercase;
+		text-align: center;
+		vertical-align: middle;
+		color: #303030;
+		padding-top: 2px;
+		font-size: 10px;
+		line-height: 14px;
+		font-family: "Arial";
+		font-weight: bold;
+		letter-spacing: 1px;
+		cursor: pointer;
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_middle_menu_embed:hover
+	{
+		background-color: #C7DBF4;
+	}
+
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_focus_embed_instructions
+	{
+		position: relative;
+		top: 14px;
+		left: 0px;
+		right: 0px;
+		text-align: center;
+		color: #303030;
+		font-size: 14px;
+		font-family: "Geneva";
+		line-height: 18px;
+	}
+
+	div#btceconomy_plugin_default_css_environment input.btceconomy_plugin_focus_embed_command
+	{
+		position: relative;
+		top: 26px;
+		left: 0px;
+		height: 22px;
+		width: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		color: #181818;
+		font-size: 12px;
+		line-height: 14px;
+		font-family: "Courier New";
+		letter-spacing: -1px;
+		border-top: 1px solid #C7DBF4;
+		border-bottom: 1px solid #C7DBF4;
+		border-left: 1px solid #C7DBF4;
+		border-right: 1px solid #C7DBF4;
+		background-color: #FCFAFC;
+	}
+
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_focus_embed_support
+	{
+		position: relative;
+		top: 37px;
+		left: 0px;
+		right: 0px;
+		text-align: center;
+		color: #303030;
+		font-size: 14px;
+		line-height: 18px;
+		font-family: "Geneva";
+	}
+
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_focus_submit_info
+	{
+		position: relative;
+		top: 30px;
+		left: 0px;
+		right: 0px;
+		height: 18px;
+		text-align: center;
+		font-size: 16px;
+		font-family: "Geneva";
+		line-height: 24px;
+		color: #505050;
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_focus_submit_info
+	{
+		font-size: 18px;
+		font-family: "Geneva";
+		line-height: 24px;
+
+	}
+
+/**
+ * CSS rules that define initial appearence of the focus area.
+ */
+
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_focus_init
+	{
+		position: relative;
+		top: 40px;
+		left: 0px;
+		right: 0px;
+		height: 18px;
+		text-align: center;
+		font-size: 16px;
+		font-family: "Geneva";
+		line-height: 18px;
+		color: #505050;
+	}
+
+/**
+ * CSS rules that define the appearance of an item in the focus area.
+ */
+
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_focus_item
+	{
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		right: 14px;
+		font-size: 16px;
+		vertical-align: top;
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_focus_button_buy,
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_focus_button_buy:hover
+	{
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		height: 18px;
+		width: 22px;
+		cursor: pointer;
+		display: block;
+		z-index: 10;
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_focus_button_buy
+	{
+		background-image: url("<?php echo require 'globals/base_url.php'; ?>/resources/cart-up.png");
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_focus_button_buy:hover
+	{
+		background-image: url("<?php echo require 'globals/base_url.php'; ?>/resources/cart-down.png");
+	}
+
+	/**
+	 */
+	div#btceconomy_plugin_default_css_environment img.btceconomy_plugin_focus_item_image
+	{
+		float: left;
+		margin-bottom: 5px;
+		margin-left: 0px;
+		margin-right: 10px;
+		margin-top: 0px;
+		max-height: 100px;
+		max-width: 100px;
+	}
+
+	/**
+	 */
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_focus_item_title
+	{
+		font-size: 16px;
+		font-family: "Geneva";
+		color: #505050;
+		line-height: 18px;
+		margin-top: 1px;
+		margin-bottom: 2px;
+	}
+
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_focus_item_domain
+	{
+		vertical-align: top;
+		text-transform: uppercase;
+		font-size: 10px;
+		font-family: "Arial";
+		color: #404040;margin-bottom: 7px;
+		line-height: 11px;
+		margin-bottom: 7px;
+	}
+
+	div#btceconomy_plugin_default_css_environment a.btceconomy_plugin_focus_item_domain
+	{
+		vertical-align: top;
+		text-transform: uppercase;
+		font-size: 10px;
+		font-family: "Arial";
+		line-height: 11px;
+		margin-bottom: 7px;
+	}
+
+	div#btceconomy_plugin_default_css_environment div.btceconomy_plugin_focus_item_description
+	{
+		font-size: 12px;
+		font-family: "Helvetica";
+		color: #505050;
+		text-align: justify;
+		line-height: 14px;
+	}
+

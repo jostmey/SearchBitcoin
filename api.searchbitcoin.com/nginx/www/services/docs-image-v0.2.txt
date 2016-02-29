@@ -1,0 +1,36 @@
+Author: Jared L. Ostmeyer
+Email: jostmey@gmail.com
+Date Started: 2011-07-30
+Purpose: Documentation for pulling an image of an entry in our database.
+
+CONTENTS:
+* INTRO:
+* EXAMPLE REQUEST AND EXPLANATION
+
+INTRO:
+
+	Before releasing a product or service using our database you must first read the "readme" file, which located is in this
+	folder.
+
+EXAMPLE REQUEST AND EXPLANATION:
+
+	Below is an example of how to include an image in your website of an item in our database. Be sure that you use the URL
+	listed below when making the request (notice the ".php" extension has been dropped).
+
+	 	<img src="http://api.searchbitcoin.com/services/image/21550/large" />
+
+	This snippet of HTML will load an image of the item with "id=21550" in your website. The image will be of larger size if
+	a larger size of the image is available.
+
+	Here is a more detailed explanation of the URL parameters.
+
+		<img src="http://api.searchbitcoin.com/services/image/{$id}/{$size}
+
+		id: An integer value returned from the FEED API or SEARCH API. The id value acts as the primary key for the database
+			and will identify the image to load.
+		size: A string that picks the size of the image to use. There are two options: "small" and "large". The default
+			value, which is used if the parameter is omitted, is "small". Images of size "small" will fit into a 50px
+			by 50px box. Note, that the image could actually be smaller than the 50px by 50px. The other option, "large",
+			will return an image that can fit within a 100px by 100px box. In cases where large images of 100px by 100px
+			are not available, smaller images will be returned.
+

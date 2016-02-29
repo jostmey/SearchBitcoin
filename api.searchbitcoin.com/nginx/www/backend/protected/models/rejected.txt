@@ -1,0 +1,11 @@
+Hello,
+
+You are receiving this email from Search Bitcoin because a request was made to add your website, '%d', to our service. Search Bitcoin helps people find merchandise and services available in the bitcoin community. Many websites are now using our tools to help promote the bitcoin economy such as 'www.weusecoins.com', 'www.bitcoinme.com', and many other great websites.
+
+We regret to announce that your request has been denied. Feel free to submit your website again at 'http://www.searchbitcoin.com/vendors/join', and we will take another look at your request. Before re-submitting, please take some time to read the reviewers comments if any were provided in this email.
+
+%cIf you did not make the request to have your website added to our service then we apologize. Someone else made the submission using your email address.
+
+Sincerely,
+Search Bitcoin Team
+

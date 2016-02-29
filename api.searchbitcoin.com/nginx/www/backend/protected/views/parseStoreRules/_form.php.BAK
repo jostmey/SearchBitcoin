@@ -1,0 +1,144 @@
+<div class="form">
+
+<?php $form=$this->beginWidget('CActiveForm', array(
+	'id'=>'parse-store-rules-form',
+	'enableAjaxValidation'=>false,
+)); ?>
+
+	<p class="note">Fields with <span class="required">*</span> are required.</p>
+
+	<?php echo $form->errorSummary($model); ?>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'id_vendor'); ?>
+		<?php echo $form->textField($model,'id_vendor'); ?>
+		<?php echo $form->error($model,'id_vendor'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'crawl_seed'); ?>
+		<?php echo $form->textField($model,'crawl_seed',array('size'=>60,'maxlength'=>256)); ?>
+		<?php echo $form->error($model,'crawl_seed'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'crawl_pattern'); ?>
+		<?php echo $form->textField($model,'crawl_pattern',array('size'=>60,'maxlength'=>256)); ?>
+		<?php echo $form->error($model,'crawl_pattern'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'crawl_frequency'); ?>
+		<?php echo $form->textField($model,'crawl_frequency'); ?>
+		<?php echo $form->error($model,'crawl_frequency'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'crawl_page_limit'); ?>
+		<?php echo $form->textField($model,'crawl_page_limit'); ?>
+		<?php echo $form->error($model,'crawl_page_limit'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'index_pattern'); ?>
+		<?php echo $form->textField($model,'index_pattern',array('size'=>60,'maxlength'=>256)); ?>
+		<?php echo $form->error($model,'index_pattern'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'title_selector'); ?>
+		<?php echo $form->textField($model,'title_selector',array('size'=>60,'maxlength'=>256)); ?>
+		<?php echo $form->error($model,'title_selector'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'title_offset'); ?>
+		<?php echo $form->textField($model,'title_offset'); ?>
+		<?php echo $form->error($model,'title_offset'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'description_selector'); ?>
+		<?php echo $form->textField($model,'description_selector',array('size'=>60,'maxlength'=>256)); ?>
+		<?php echo $form->error($model,'description_selector'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'description_offset'); ?>
+		<?php echo $form->textField($model,'description_offset'); ?>
+		<?php echo $form->error($model,'description_offset'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'image_selector'); ?>
+		<?php echo $form->textField($model,'image_selector',array('size'=>60,'maxlength'=>256)); ?>
+		<?php echo $form->error($model,'image_selector'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'image_offset'); ?>
+		<?php echo $form->textField($model,'image_offset'); ?>
+		<?php echo $form->error($model,'image_offset'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'price_selector'); ?>
+		<?php echo $form->textField($model,'price_selector',array('size'=>60,'maxlength'=>256)); ?>
+		<?php echo $form->error($model,'price_selector'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'price_offset'); ?>
+		<?php echo $form->textField($model,'price_offset'); ?>
+		<?php echo $form->error($model,'price_offset'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'category_selector'); ?>
+		<?php echo $form->textField($model,'category_selector',array('size'=>60,'maxlength'=>256)); ?>
+		<?php echo $form->error($model,'category_selector'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'category_offset'); ?>
+		<?php echo $form->textField($model,'category_offset'); ?>
+		<?php echo $form->error($model,'category_offset'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'expiration_selector'); ?>
+		<?php echo $form->textField($model,'expiration_selector',array('size'=>60,'maxlength'=>256)); ?>
+		<?php echo $form->error($model,'expiration_selector'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'expiration_offset'); ?>
+		<?php echo $form->textField($model,'expiration_offset'); ?>
+		<?php echo $form->error($model,'expiration_offset'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'expiration_pattern'); ?>
+		<?php echo $form->textField($model,'expiration_pattern',array('size'=>60,'maxlength'=>256)); ?>
+		<?php echo $form->error($model,'expiration_pattern'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'status'); ?>
+		<?php echo $form->textField($model,'status',array('size'=>60,'maxlength'=>64)); ?>
+		<?php echo $form->error($model,'status'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'created'); ?>
+		<?php echo $form->textField($model,'created'); ?>
+		<?php echo $form->error($model,'created'); ?>
+	</div>
+
+	<div class="row buttons">
+		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+	</div>
+
+<?php $this->endWidget(); ?>
+
+</div><!-- form -->

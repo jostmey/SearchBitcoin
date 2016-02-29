@@ -1,0 +1,103 @@
+Author: Jared L. Ostmeyer
+Email: jostmey@gmail.com
+Date Started: 2011-07-13
+Purpose: Documentation for searching the database of Search Bitcoin.
+
+CONTENTS:
+* INTRO:
+* EXAMPLE REQUEST AND EXPLANATION
+* EXAMPLE RESPONSE AND EXPLANATION
+
+INTRO:
+
+	Before releasing a product or service using our database you must first read the "readme" file, which located is in this
+	folder.
+
+EXAMPLE REQUEST AND EXPLANATION:
+
+	Below is an example of how to request a search for a product or service. Be sure that you use the URL listed below when
+	making the request (notice the ".php" extension has been dropped).
+
+	 	http://api.searchbitcoin.com/services/search?query=laptop&number=10&exact=0&order=forward&format=json&page=0&callback=btcsearch
+
+	This example request will return 10 search results for the keyword "laptop". If there are less than 10 matches the blank
+	search results will be filled with the most popular items in the database. The order of the data will be returned such that
+	the most relevant results come first. The data will be returned in JSON format padded with the callback function "btcsearch".
+
+	Here is a more detailed explanation of the URL parameters. All URL parameters are optional.
+
+		query: A string containing the search query. The string should be percent encoded, though this is probably not
+			critical. The default value is "Hello World".
+		number: Integer indicating the desired number of search results. The value must be between 1 and 15. The default
+			value is 10.
+		exact: Boolean value (0 or 1) indicating if the matches have to be exact. If the matches do not have to be exact
+			then any null search results will be filled with the most popular items in the database. If the matches have
+			to be exact then the number of returned search results may be less than the requested number of search
+			results. The default value is false (0).
+		order: String indicating the order in which the search results are returned. Use 'forward' to indicate that the most
+			relevant search results should come first. Use 'reverse' to indicate that the results should be returned
+			with the most relevant search results at the bottom (this option allows for a quick fix if you notice the
+			results are up-side down in rank). Use 'random' to have the search results arranged in a random order. The
+			default ordering is "forward".
+		format: String indicating the data format to use when returning the search results. The current options are limited
+			to JSON and HTML (for debugging). However, other data formats will be added if requested. The default value
+			is JSON.
+		callback: String giving the name of the callback function to use to pad the JSON request (JSONP). If the parameter is
+			not used then the callback function will be omitted, and request will not be padded (just JSON).
+		page: An integer used to request additional search results.
+
+EXAMPLE RESPONSE AND EXPLANATION:
+
+	Here is an example response to a search query. This example response is formatted in JSON and contains just 2 results. The
+	callback function is omitted.
+
+		{
+
+			"items": [
+				{
+					"domain": "www.example.com",
+					"title": "Red Card",
+					"description": "This red car is fast",
+					"url": "http:\/\/www.example.com\/merchandise\/car.html",
+					"image": "http:\/\/www.example.com\/images\/\/red-car.jpg",
+					"price": "100 BTC",
+					"marketing": "none"
+				},
+				{
+					"domain": "www.example.net",
+					"title": "Sofa",
+					"description": "This is a big sofa",
+					"url": "http:\/\/www.example.net\/fruniture\/sofa\/page.php",
+					"image": "http:\/\/images.example.net\/super-sofa.png",
+					"price": "10 BTC (150 USD)",
+					"marketing": "advertisement"
+				}
+			]
+		}
+
+	Here is a description of the variables.
+
+		* domain: A string containing the homepage for the business or merchandise. It can either be a partial domain such
+			as "example.com", a FQDN such as "store.examle.com", or even a partial URL in cases like
+			"www.craigslist.org\/bitcoin-merchandise".
+		* title: A string containing the title of the business or merchandise. In general, the string will not exceed 256
+			characters.
+		* description: A string containing a full description of the product or service. In general, the string may exceed
+			1024 characters.
+		* url: A string containing the URL to the webpage where the business or item may be found.
+		* image: A string containing the URL to an image of the business or merchandise. The dimensions of the image are
+			almost always such that the image will fit inside a 50 x 50px box. However, the dimension of some images
+			will exceed this box size.
+		* price: A string containing the price of the item. If the item is sold in bitcoin directly the string will be of
+			the form "xxx BTC". If the product is sold in another currency like USD, but the vendor accepts bitcoins,
+			the format of the price will be "xxx BTC (xxx USD)". The price is not guarenteed to be correct (fluctuations
+			in currency value make it impossible to keep the prices always up to date). The price is not know for most of
+			the items in our database, so often this field will be "null".
+		* review: URL to a page at Search Bitcoin where visitors can read reviews about the vendor selling the merchandise or
+			service.
+		* marketing: A string indicating if Search Bitcoin has marketing arrangements with the website in the search request.
+			If the string is "none" then the search result is unbiased by any marketing agreement. If the string is
+			"affiliate" then the link contains an affiliate marketing code but the search result is still unbiased by any
+			marketing agreement. If the string contains is "advertisement" then the search result has been biased by a
+			marketing agreement.
+

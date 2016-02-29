@@ -1,0 +1,129 @@
+# You may add here your
+# server {
+#	...
+# }
+# statements for each of your virtual hosts to this file
+
+##
+# You should look at the following URL's in order to grasp a solid understanding
+# of Nginx configuration files in order to fully unleash the power of Nginx.
+# http://wiki.nginx.org/Pitfalls
+# http://wiki.nginx.org/QuickStart
+# http://wiki.nginx.org/Configuration
+#
+# Generally, you will want to move this file somewhere, and start with a clean
+# file but keep this around for reference. Or just disable in sites-enabled.
+#
+# Please see /usr/share/doc/nginx-doc/examples/ for more detailed examples.
+##
+
+server {
+	#listen   80; ## listen for ipv4; this line is default and implied
+	#listen   [::]:80 default ipv6only=on; ## listen for ipv6
+
+	root /usr/share/nginx/www;
+	index index.html index.htm;
+
+	# Make site accessible from http://localhost/
+	server_name api.searchbitcoin.com;
+
+	location / {
+		rewrite "^/btceconomy(.*)$" /apps/btceconomy/2.0/loader.php last;
+	}
+
+	location /apps/ {
+		autoindex off;
+	}
+
+	location /backend/ {
+		autoindex off;
+	}
+
+	location ~ /backend/protected.* {
+		return 403;
+	}
+
+	location /scripts/ {
+		autoindex off;
+	}
+
+	location /services/ {
+		autoindex on;
+		rewrite "^/services/economy(.*)$"  /scripts/api/economy.php$1 last;
+		rewrite "^/services/referral(.*)$" /scripts/api/referral.php$1 last;
+		rewrite "^/services/review(.*)$"   /scripts/api/review.php$1 last;
+		rewrite "^/services/search(.*)$"   /scripts/api/search.php$1 last;
+	}
+
+	location /services/image/ {
+		# Instruct the browsers not to cache the images. Otherwise, the browser may leak memory.
+		#
+#		add_header HTTP/1.1 "200 OK";
+#		add_header Expires "Sat, 22 Jan 2011 18:23:36 GMT";
+#		add_header Last-Modified "Wed, 31 Aug 2015 05:52:13 GMT";
+#		add_header Cache-Control "no-store, no-cache, must-revalidate";
+#		add_header Cache-Control "post-check=0, pre-check=0";
+#		add_header Pragma "no-cache";
+#		add_header Content-Type "image/png";
+
+		# See the following URL to test modifications to the regular expression in the rewrite rule.
+		# http://www.regexplanet.com/simple/index.html
+		#
+		# Possible URLS are:
+		# /services/image/123
+		# /services/image/123/
+		# /services/image/123/small
+		# /services/image/123/large
+		#
+
+		# Assign default image sizes.
+		#
+		rewrite "^/services/image/(\d+)$"  /services/image/$1/small;
+		rewrite "^/services/image/(\d+)/$" /services/image/$1/small;
+
+		# Handle images sizes.
+		#
+		rewrite "^/services/image/(\d+)/small$" /services/image/$1/50-50.png;
+		rewrite "^/services/image/(\d+)/large$" /services/image/$1/100-100.png;
+
+		# Handle ids that are 3 or more digits.
+		#
+		rewrite "^/services/image/(\d*([1-9]\d{2}))/(.*)$" /static/image-cache/$2/$1_$3 last;
+		rewrite "^/services/image/(\d+0([1-9]\d))/(.*)$"   /static/image-cache/$2/$1_$3 last;
+		rewrite "^/services/image/(\d+00(\d))/(.*)$"       /static/image-cache/$2/$1_$3 last;
+
+		# Handle ids that are 2 digits or less in length.
+		#
+		rewrite "^/services/image/([1-9]\d)/(.*)$" /static/image-cache/$1/$1_$2 last;
+		rewrite "^/services/image/(\d)/(.*)$"      /static/image-cache/$1/$1_$2 last;
+	}
+
+	location /static/ {
+		autoindex off;
+	}
+
+	location /static/image-cache/ {
+		try_files $uri /static/image-cache/image_not_ready.png;
+	}
+
+	#error_page 404 /404.html;
+
+	# redirect server error pages to the static page /50x.html
+	#
+	#error_page 500 502 503 504 /50x.html;
+	#location = /50x.html {
+	#	root /usr/share/nginx/www;
+	#}
+
+	# pass the PHP scripts to FastCGI server listening on 127.0.0.1:9000
+	#
+	location ~ \.php$ {
+		# Secure directories containing uploaded content so that it cannot be executed.
+		if ($uri !~ "^/static/") {
+			fastcgi_pass unix:/var/run/php5-fpm.sock;
+		}
+		fastcgi_index index.php;
+		include fastcgi_params;
+	}
+}
+

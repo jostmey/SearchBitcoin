@@ -1,0 +1,103 @@
+Author: Jared L. Ostmeyer
+Email: jostmey@gmail.com
+Date Started: 2011-07-13
+Purpose: Documentation for pulling data from search bitcoin hooks.
+
+Contents:
+* DISCLAIMER
+* ERRORS / EMERGENCY / MAINTINANCE
+* PATHS (URL) TO DATA:
+* ANATOMY OF SEARCH RESULTS:
+* URL PARAMETERS:
+
+DISCLAIMER:
+
+	Welcome! Our mission is to make the bitcoin economy discoverable to the public. We are pleased to bring you access
+	to our database of bitcoin businesses and merchandise. Before you start pulling data from out feeds, be sure that
+	you have prior permission from us, and that you have agreed to our terms. If you have done this already then you
+	are ready to go!
+
+ERRORS / EMERGENCY / MAINTINANCE:
+
+	In the event of an error please contact me at 'jostmey@gmail.com'. If you feel the situation is urgent you may call me at
+	(417) 540-8028. This is United States phone number.
+
+	We reserve the right to temporarily shut the service down every Sunday for three hours starting at 11:00PM CST. In general,
+	there should be no reason for us to shutdown, and we will keep our service running through these hours.
+
+PATHS (URL) TO DATA:
+
+	The following URL is for pulling JSON data from our services.
+
+		http://api.searchbitcoin.com/apps/btcsearch/hooks/search.json
+
+	The JSON data can be padded with a callback function simply by changing the extension on the URL to ".js". The
+	callback function is by default "btcsearch". However, the callback function can also be specified as a URL GET
+	parameters as follows:
+
+		http://api.searchbitcoin.com/apps/btcsearch/hooks/search.js?callback={NAME_OF_CALLBACK_METHOD}
+
+	If you use jQuery to make the JSONP request then it may be necessary for you to specify the callback parameter.
+	If you need the data in another format, say XML, then contact us and we can set it up.
+
+ANATOMY OF SEARCH RESULTS:
+
+	The basic search result will be of the following form:
+
+		[
+			{
+				"domain": "www.example.com",
+				"title": "Red Card",
+				"description": "This red car is fast",
+				"url": "http:\/\/www.example.com\/merchandise\/car\/",
+				"image": "http:\/\/www.example.com\/images\/\/red-car.jpg",
+				"price": "100 BTC ($1500 USD)",
+				"result": "match"
+			},
+			{
+				"domain": "www.example.net",
+				"title": "Sofa",
+				"description": "This is a big sofa",
+				"url": "http:\/\/www.example.net\/fruniture\/sofa\/",
+				"image": "http:\/\/images.example.net\/super-sofa.png",
+				"price": "10 BTC ($150 USD)",
+				"result": "advertisement"
+			}
+		]
+
+	Here is a list of the variables, a description of the variables, and the possible values.
+
+		* domain: A string containing the domain name where thebusiness or merchandise may be found on the internet.
+			It can either be a partial domain such as "example.com" or a FQDN such as "image.examle.com", or even
+			a partial URL in some cases like "www.etsy.com\/bitcoin".
+		* title: A string containing the title of the business or merchandise. In general, the string will not exceed 256
+			characters.
+		* description: A string containing a full description of the product or service. In general, the is not limit on
+			the size of the string (yet).
+		* url: A string containing the URL to the page where the business or item can be found.
+		* image: A string containing the URL to the business logo or an image of the product.
+		* price: A string containing the price of the item for sale in bitcoins ("xxx BTC") or USD ("xxx BTC ($xxx USD)").
+			The price is not know for all items in our database, so often this field will be "null".
+		* result: A string indicating the type of search result. The search result can either be "match", "random",
+			"affiliate", or	"advertisement". "match" indicates that the result is believed to be an exact match.
+			"random" are results that are not matches, but are returned to fill up space. "affiliate" indicates
+			that Search Bitcoin will receive a percentage of any sale that may happen, but that the search result
+			is unbiased. "advertisement" indicates a biased search result.
+
+URL PARAMETERS:
+
+	A number of URL parameters are supported. Here is an example request containing every possible URL parameters.
+
+		http:// ... /search.js?callback=btcsearch&query=laptop&number=10&exact=0
+
+	Here is a description of the URL parameters.
+
+		* callback: This parameter is only used when making JSONP calls. Use it to specify the callback function. If it
+			is omitted then it callback function will default to "btcsearch".
+		* query:
+		* number: Integer value indicating the desired number of search results to return. The minimum value is 2 and the
+			maximum value is 15.
+		* exact: Boolean value (either 0 or 1) indicating if it is okay to return random results. "1" indicates that random
+			results may not be returned. "0" indicates that random results may be returned.
+
+

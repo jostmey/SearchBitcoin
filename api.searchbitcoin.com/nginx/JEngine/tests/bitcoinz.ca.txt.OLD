@@ -1,0 +1,27 @@
+
+# URL
+# http://bitcoinz.ca/index.php?main_page=product_info&cPath=45&products_id=938
+
+crawl_seed = http://bitcoinz.ca/
+crawl_pattern = ^http:\\\/\\\/bitcoinz\\\.ca\\\/.*$
+index_pattern = ^http:\\\/\\\/bitcoinz\\\.ca\\\/index\\\.php\\\?main_page=product_info\\\&cPath=[0-9\\\-\\\_]+\\\&products_id=[0-9]+$
+
+title_selector = h1#productName
+title_offset = 0
+
+description_selector = div#productDescription
+description_offset = 0
+
+image_selector = div#productMainImage img
+image_offset = 0
+
+price_selector = h2#productPrices
+price_offset = 0
+
+category_selector = div#categoryIcon
+category_offset = 0
+
+#expiration_selector = 
+#expiration_offset = 
+#expiration_pattern = 
+
