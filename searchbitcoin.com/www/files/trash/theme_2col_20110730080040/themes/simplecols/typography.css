@@ -1,0 +1,42 @@
+body {
+	/* customize_body */ color: #535353; /* customize_body */
+	/* customize_body */ font: 66% Arial, Helvetica, sans-serif; /* customize_body */
+	}
+	
+/************************************************
+*	Hyperlinks									*
+************************************************/
+
+#wrap a, #wrap a:visited 											{ /* customize_link */ color: #017F8D; /* customize_link */ }
+#wrap a:hover 														{ /* customize_link_hover */ color: #017F8D; /* customize_link_hover */ }
+a																	{ text-decoration: none; }
+a:hover																{ text-decoration: underline; }
+	
+/************************************************
+*	Header  									*
+************************************************/
+	
+#header	h2															{ float: right; position: relative; width: 300px; height: 45px; margin-top: 15px; font-size: 185%; color: #00aeef; text-align: right; }
+	
+/************************************************
+*	Content 					     		    * 
+************************************************/
+
+#splash .callback h3												{ margin-top: 10px; margin-bottom: 15px; padding-bottom: 10px; font-size: 165%; color: #00aeef; border-bottom: solid 1px #d6d6d6; }
+#page-left h2														{ margin-bottom: 15px; padding-bottom: 10px; font-size: 185%; line-height: normal; color: #00aeef; border-bottom: solid 1px #d6d6d6; }
+#page-left h3, #page-left h4										{ margin-top: 35px; margin-bottom: 15px; padding-bottom: 10px; font-size: 185%; line-height: normal; color: #00aeef; border-bottom: solid 1px #d6d6d6; }
+#page-right h3														{ margin-bottom: 15px; padding-bottom: 10px; font-size: 185%; color: #00aeef; border-bottom: solid 1px #d6d6d6; }
+#page-right h4														{ margin-top: 55px; margin-bottom: 15px; padding-bottom: 10px; font-size: 185%; line-height: normal; color: #00aeef; border-bottom: solid 1px #d6d6d6; }
+#alt-left h3														{ margin-bottom: 15px; padding-bottom: 10px; font-size: 185%; color: #00aeef; border-bottom: solid 1px #d6d6d6; }
+#alt-left h4														{ margin-top: 55px; margin-bottom: 15px; padding-bottom: 10px; font-size: 185%; line-height: normal; color: #00aeef; border-bottom: solid 1px #d6d6d6; }
+#alt-right h2														{ margin-bottom: 15px; padding-bottom: 10px; font-size: 185%; line-height: normal; color: #00aeef; border-bottom: solid 1px #d6d6d6; }
+#alt-right h3, #alt-right h4										{ margin-top: 35px; margin-bottom: 15px; padding-bottom: 10px; font-size: 185%; line-height: normal; color: #00aeef; border-bottom: solid 1px #d6d6d6; }
+
+/************************************************
+*	Footer  									*
+************************************************/
+
+#footer .box h6														{ margin-bottom: 15px; padding-bottom: 10px; font-size: 145%; color: #fff; border-bottom: solid 1px #d6d6d6; }
+#footer .box h6.big													{ font-size: 195%; color: #00aeef; border: none; }
+
+/* customize_miscellaneous */ /* customize_miscellaneous */

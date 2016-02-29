@@ -1,0 +1,41 @@
+/*
+Theme Name: Modernist
+Description: Used to fix buges in IE 6 and IE 7.
+*/
+
+.post ul,
+.post ol {
+	margin-left: 2.3em; /* Aligns bullets */
+}
+
+.post-meta ul {
+	margin-left: 0; /* Removes margin-left */
+}
+
+.comment,
+.trackback,
+.pingback {
+	float: none; /* Prevents wacky behaviour of comments */
+}
+
+.comment-body ul {
+	margin-left: 1.5em; /* Aligns bullets */
+}
+
+.post-navigation li,
+.comment-navigation li {
+	line-height: 2; /* Forces display of border-bottom */
+}
+
+.post table td,
+.post table th {
+	border-bottom: 1px solid #ddd; /* Adds a border-bottom to each TD/TH */
+}
+
+.comment-meta {
+	line-height: 2 !important; /* Forces display of border-bottom */
+}
+
+table#wp-calendar td {
+	border-bottom: 1px solid #ddd; /* Adds a border-bottom to each TD */
+}

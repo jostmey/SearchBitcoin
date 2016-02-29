@@ -1,0 +1,7 @@
+a { /* customize_link */color:#666;/* customize_link */}
+a:link{color:#999999; text-decoration:none;}
+a:hover {/* customize_link_hover */color:#000;/* customize_link_hover */}
+a:visited{color:#999999; text-decoration:none;}
+h1 { font-size:20px; font-weight:bold; /* customize_h1 */color:#333;/* customize_h1 */}
+h2 { font-size:24px; font-weight:bold;/* customize_h2 */ color:#222;/* customize_h2 */ margin:0px;}
+h3 {font-size:14px; font-weight:bold; /* customize_h3 */color:#333;/* customize_h3 */}

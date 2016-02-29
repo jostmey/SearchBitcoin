@@ -1,0 +1,8 @@
+
+body { /* customize_body */ font: 72.5%/1.7em "Lucida Grande", "Lucida Sans Unicode", verdana, geneva, sans-serif;  /* customize_body */ /* customize_body */ color:#555; /* customize_body */ }
+a { /* customize_links */ color:#007898; /* customize_links */  }
+a:hover {  /* customize_links_hover */color: #808080; /* customize_links_hover */ }
+h1 { /* customize_h1 */ font-size: 2em; /* customize_h1 */ }
+h2 { /* customize_h2 */ font-size: 1.8em; /* customize_h2 */ }
+h3 { /* customize_h3 */ font-size: 1.5em; /* customize_h3 */ }
+	

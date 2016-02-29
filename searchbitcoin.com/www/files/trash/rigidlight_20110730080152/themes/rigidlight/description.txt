@@ -1,0 +1,2 @@
+Rigid Light
+A beautiful clean theme for C5

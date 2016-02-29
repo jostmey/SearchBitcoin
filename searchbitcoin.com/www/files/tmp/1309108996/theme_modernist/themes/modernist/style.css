@@ -1,0 +1,680 @@
+/*
+Theme Name: Modernist
+Theme URI: http://www.rodrigogalindez.com/themes/modernist
+Description: A flexible, minimal theme focused on great typography. An invisible design to let you and your users focus on your content. Based on the design ideas of Jan Tschichold, Josef Müller-Brockmann, Dieter Rams, and other modernists. Supports widgets, SEO optimized, clean and documented code, fast to load, no plugins required. Works in WordPress 2.7 and superior. Works in IE 6 & superior and all versions of Safari/Firefox/Opera. Includes CSS3 buttons.
+Version: 2.5
+Author: Rodrigo Galindez
+Author URI: http://www.rodrigogalindez.com
+Tags: white, blue, black, silver, light, two-columns, fixed-width, threaded-comments, sticky-post, custom-header, custom-colors, custom-menu
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+/* ----------------------------------------------- [ * ] */
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* -------------------------------- [ General Elements ] */
+/*
+body {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 62.5%;
+	background-image: url(images/bg.gif);
+	background-repeat: repeat;
+	background-position: top left;
+	color: #444;
+}
+*/
+hr {
+	display: none;
+}
+
+img {
+	vertical-align: baseline;
+	border: 0;
+}
+
+#wrapper p {
+	//margin: 0 0 1.4em 0;
+	font-size: 1.4em;
+	line-height: 1.65;
+}
+/*
+#wrapper a {
+	color: #21759B;
+	border-bottom: 1px dotted #ccc;
+	text-decoration: none;
+}
+
+#wrapper a:hover {
+	color: #1F536C;
+}
+*/
+h2.page-title {
+	margin: 0 0 .5em 0 !important;
+	font-size: 2.8em;
+	font-weight: normal;
+	color: #21759B;
+}
+
+code {
+	font-family: Monaco, "Courier New", fixed;
+	font-size: 12px;
+	color: #6C8318;
+	font-weight: normal;
+}
+
+/* ----------------------------------------- [ Wrapper ] */
+
+#wrapper {
+	width: 878px;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	height: 1%;
+}
+
+#wrapper:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* ------------------------------------------ [ Header ] */
+
+#header-wrapper {
+	height: 1%;
+	clear: both;
+}
+
+#header-wrapper:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+#header {
+	margin: 0 -20px;
+	padding: 20px;
+	height: 90px;
+}
+
+#header h1 {
+	font-size: 4.8em;
+	font-weight: normal;
+}
+
+#header h1 a {
+	text-decoration: none;
+	border: 0 none;
+}
+
+#nav {
+	margin: 0 0 15px 3px;
+	padding: 15px 0 0 0;
+	background: transparent url("images/l.gif") no-repeat left top;
+	height: 1%;
+	clear: both;
+}
+
+#nav:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+/* Son of Suckerfish Dropdowns: http://htmldog.com/articles/suckerfish/dropdowns/ */
+
+#nav ul {
+	list-style-type: none;
+}
+
+#nav li {
+	margin-right: 25px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.5em;
+	line-height: 1.0;
+	float: left;
+}
+
+#nav li.nav-selected a {
+	font-weight: bold;
+	color: #333;
+}
+
+#nav li a {
+	display: block;
+	border: 0 none;
+	color: #555;
+}
+
+#nav li a:hover {
+	color: #21759B;
+}
+
+#nav li ul {
+	position: absolute;
+	left: -999em;
+}
+
+#nav li:hover ul,
+#nav li.sfhover ul {
+	left: auto;
+}
+
+#nav li ul li {
+	font-size: 11px;
+}
+
+#nav li.nav-selected ul li a {
+	font-weight: normal;
+}
+
+#nav li ul li a {
+	border-bottom: 1px dotted #ccc;
+}
+
+/* ----------------------------------------- [ Content ] */
+
+#content {
+	width: 530px;
+	padding: 15px 0;
+	float: left;
+}
+
+/* Post */
+
+.post,
+.page {
+	height: 1%;
+}
+
+.post:after,
+.page:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.post table {
+	width: 100%;
+	font-size: 1.4em;
+	line-height: 1.65;
+	border-collapse: collapse;
+}
+
+.post table th {
+	padding: 5px 0;
+	text-align: left;
+}
+
+.post table td {
+	padding: 5px 0;
+}
+
+.post table tr {
+	border-bottom: 1px solid #ddd;
+}
+
+.post dl {
+	margin: 0 0 1.4em 0;
+}
+
+.post dt {
+	margin-top: 1.4em;
+	font-size: 1.4em;
+	line-height: 1.65;
+	font-weight: bold;
+}
+
+.post dt:first-child {
+	margin: 0;
+}
+
+.post dd {
+	font-size: 1.3em;
+	line-height: 1.65;
+}
+
+.post ul,
+.post ol {
+	margin: 0 0 1.4em 0;
+}
+
+.post li {
+	font-size: 14px;
+	line-height: 1.65;
+}
+
+.post li ul,
+.post li ol {
+	margin-left: 15px;
+}
+
+.post address {
+	font-size: 1.4em;
+	line-height: 1.65;
+	margin: 0 0 1.4em 0;
+}
+
+.post abbr,
+.post acronym {
+	border-bottom: 1px dotted #ccc;
+}
+
+.post pre {
+	margin: 0 0 1.4em 0;
+	font-family: Monaco, "Courier New", fixed;
+	font-size: 12px;
+	color: #6C8318;
+}
+
+.post kbd,
+.post tt {
+	font-family: Monaco, "Courier New", fixed;
+	font-size: 12px;
+	color: #666;
+}
+
+.post var {
+	color: #892E12;
+}
+
+/* Hack to make the 'Div and Span Tests' unit test look better */
+div.myclass strong { 
+	font-size: 1.4em;
+	line-height: 1.65;
+}
+
+.post blockquote {
+	margin-left: 30px;
+	padding-left: 15px;
+	border-left: 2px solid #ddd;
+}
+
+.post img {
+	max-width: 500px;
+	height: auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	padding: 8px;
+	background: #fff;
+	border: 1px solid #e9e9e9;
+}
+
+.post-header h2 {
+	margin: 0;
+	font-size: 2.8em;
+	font-weight: normal;
+	color: #333;
+}
+
+.post-header h2 a {
+	border: 0 none;
+	color: #333;
+}
+
+.post-header h3 {
+	margin: 0 !important;
+	font-size: 2em;
+	line-height: 1.4;
+	font-weight: normal;
+}
+
+.post-header h3 a {
+	border: 0 none;
+	color: #333;
+}
+
+.post-header p {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.1em;
+	color: #777;
+}
+
+.post-meta {
+	padding: 10px 0 0 0;
+	background: transparent url("images/l.gif") no-repeat left top;
+	clear: both;	
+}
+
+.post-meta ul {
+	list-style-type: none;
+}
+
+.post-meta li {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	color: #777;
+}
+
+.post-navigation,
+.comment-navigation {
+	margin: 0 0 40px 0;
+	padding: 10px 0 0 0;
+	background: transparent url("images/l.gif") no-repeat left top;
+	clear: both;
+	float: left;
+	height: 1%;
+}
+
+.comment-navigation {
+	margin-top: 40px;
+}
+
+.post-navigation:after,
+.comment-navigation:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.post-navigation ul,
+.comment-navigation ul {
+	list-style-type: none;
+}
+
+.post-navigation li,
+.comment-navigation li {
+	margin-right: 25px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.1em;
+	color: #777;
+	float: left;
+}
+
+.post-page-links {
+	margin-bottom: 1.4em;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	color: #777;
+}
+
+/* Comments */
+
+.post-comments {
+	margin: 0 0 40px 0;
+	height: 1%;
+}
+
+.post-comments:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.post-comments h2,
+h3#comments-title, 
+h3#reply-title {
+	margin-bottom: 1em;
+	font-size: 2.8em;
+	font-weight: normal;
+	color: #21759B;
+}
+
+.comment,
+.trackback,
+.pingback {
+	width: 530px;
+	margin: 0 0 20px 0;
+	padding: 0 0 20px 0;
+	border-bottom: 1px solid #ddd;
+	clear: both;
+	float: left;
+	height: 1%;
+}
+
+.comment:after, 
+.trackback:after,
+.pingback:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.pingback p, 
+.trackback p {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	color: #aaa;
+}
+
+.comment-avatar {
+	width: 60px;
+	float: left;
+}
+
+.comment-avatar img {
+	width: 54px;
+	padding: 2px;
+	background: #fff;
+	border: 1px solid #ddd;
+}
+
+.comment-body {
+	width: 460px;
+	margin-left: 10px;
+	float: right;
+}
+
+.comment-body ul {
+	margin: 0 0 1.4em 1.2em;
+}
+
+.comment-body li {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 11px;
+	line-height: 1.5;
+}
+
+.comment-body blockquote {
+	margin-left: 30px;
+	margin-bottom: 1.4em;
+	padding-left: 15px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 11px;
+	line-height: 1.5;
+	border-left: 2px solid #ddd;
+}
+
+.comment-body blockquote p {
+	font-size: 1em;
+}
+
+.comment-meta {
+	margin: 0;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	color: #777;
+}
+
+.comment-form table {
+	width: 530px;
+	border-collapse: collapse;
+}
+
+.comment-form th {
+	width: 120px;
+	padding: 2px 0 15px 0;
+	text-align: left;
+	vertical-align: top;
+}
+
+.comment-form th label {
+	font-size: 1.3em;
+	line-height: 1.4;
+	color: #333;
+}
+
+.comment-form th p {
+	margin: 0;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.1em;
+	font-weight: normal;
+	color: #777;
+}
+
+.comment-form td {
+	padding: 5px 0 15px 24px;
+	vertical-align: top;
+}
+
+.comment-form td input {
+	width: 280px;
+	padding: 6px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.3em;
+	border-left: 1px solid #999;
+	border-top: 1px solid #999;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	color: #444;
+}
+
+.comment-form td textarea {
+	width: 360px;
+	padding: 6px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.3em;
+	line-height: 1.65;
+	font-weight: 300;
+	border-left: 1px solid #999;
+	border-top: 1px solid #999;
+	border-right: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	color: #444;
+}
+
+#submit {
+	width: auto;
+	padding: 6px 10px;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.3em;
+	font-weight: bold;
+	background: transparent url(images/bg-button.png) repeat-x 0 50%;
+	background-color: #21759B;
+	border: 0 none;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-webkit-transition: all .2s linear;
+}
+
+#submit:hover {
+	background-color: #1F536C;
+	text-decoration: none;
+}
+
+/* ----------------------------------------- [ Sidebar ] */
+
+#sidebar {
+	width: 250px;
+	padding: 15px 20px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	float: right;
+	color: #777777;
+}
+
+#sidebar h2 {
+	margin: 0 0 .9em 0;
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 1.3em;
+	line-height: 1.4;
+	text-transform: uppercase;
+	color: #666;
+}
+
+#sidebar a {
+	color: #555;
+}
+
+#sidebar a:hover {
+	color: #111;
+}
+
+#sidebar p {
+	font-size: 1em;
+	line-height: 1.5;
+}
+
+#sidebar ul {
+	list-style-type: none;
+}
+
+#sidebar li {
+	margin: 0 0 .4em 0;
+}
+
+#sidebar .section {
+	margin: 0 0 40px 0;
+	padding: 15px 0;
+	background: transparent url(images/l.gif) no-repeat top left;
+}
+
+/* ------------------------------------------ [ Footer ] */
+
+#footer {
+	padding: 10px 0;
+	background: transparent url(images/l.gif) no-repeat top left;
+	clear: both;
+}
+
+#footer p {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+	font-size: 1.1em;
+	line-height: 1.5;
+	color: #777;
+}
+
+
+/* Widget: Pages */
+
+#sidebar ul.children {
+	margin: .4em 0 0 15px;
+}
+
+.aligncenter {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.alignleft {
+	margin-right: 15px;
+	float: left;
+}
+
+.alignright {
+	margin-left: 15px;
+	float: right;
+}
+
+img.alignnone {
+	margin-right: 5px;
+	margin-bottom: 0;
+}

@@ -1,0 +1,194 @@
+/**************************************************************
+   AUTHOR:  Pat Heard (fullahead.org)
+   DATE:    2006.03.19
+   PURPOSE: Styles the html elements
+ **************************************************************/
+h1 {   
+  clear: both;
+  font: 700 2.5em "trebuchet ms", serif;
+  color: #FFF;
+}
+
+h2 {
+  font: 400 1.5em "trebuchet ms", serif;
+  color: #9FF3FF;
+}
+
+h2 a {
+  color: #29E3FF;
+}
+
+h2 a:hover {
+  color: #FFF;
+}
+
+h3 {
+  font: 400 1.3em "trebuchet ms", serif;
+  color: #F8D766;
+}
+
+h4 {
+  font: 700 1.2em "trebuchet ms", serif;
+  color: #F39F01;
+}
+
+h5 {
+  font: 700 1.1em "trebuchet ms", serif;
+  color: #F17400;
+}
+
+h6 {
+  font: 700 1em "trebuchet ms", serif;
+  color: #FF4B33;
+}
+
+
+h1, h2, h3, h4, h5, h6, p, dl {
+  margin: 0;
+  padding: 10px 15px;
+}
+a {
+  color: #8BE6FA;
+}
+
+/* Uncomment this if you would like a visited link style 
+a:visited {
+  text-decoration: line-through;
+} */
+
+#content a:hover {
+  color: #FFF;
+}
+
+#content b {
+  color: #FFF;
+}
+
+#content ol, ul {
+  margin: 10px 30px;
+  padding: 0 30px;
+}
+
+#content ol {
+  color: #FC0;
+}
+
+ol span {
+  color: #EEE;
+}
+
+ul {
+  list-style-image: url(../images/bg/bullet.gif);
+}
+
+del {
+  color: #AAA;
+}
+
+code {
+  margin: 10px 15px;
+  padding: 10px;
+  display: block;
+  overflow: auto;
+  
+  font: 400 1em courier, monospace;
+  line-height: 120%;
+  white-space: pre;
+  
+  background: #444;
+}
+
+.leftColumn code {
+  margin-left: 0;
+}
+
+acronym {
+  cursor: help;
+  border-bottom: 1px solid #777;
+}
+
+dt {
+  font-weight: bold;
+  color: #FFB323;
+}
+
+dd {
+  margin-left: 0;
+  padding-left: 45px; 
+}
+
+/**************************************************************
+   Blockquote and included icons
+ **************************************************************/
+
+blockquote {
+  margin: 10px 15px;
+  padding-left: 27px;
+  
+  background-color: #444;  
+  background-image: url(../images/icons/quote.gif);
+  background-repeat: no-repeat;
+  background-position: 5px 50%;  
+}
+
+blockquote.exclamation {
+  background-image: url(../images/icons/exclamation.gif);
+}
+
+blockquote.stop {
+  background-image: url(../images/icons/stop.gif);
+}
+
+blockquote.go {
+  background-image: url(../images/icons/go.gif);
+}
+.small {
+  font-size: 0.8em;
+}
+
+.green {
+  color: #A1FF45;
+}
+
+.red {
+  color: #EA1B00;
+}
+
+.grey {
+  color: #666;
+}
+
+.grey a {
+  color: #999;
+}
+
+.grey a:hover {
+  color: #EEE;
+}
+
+.gradient {
+  margin-bottom: 2em;
+  background: #555 url(images/bg/gradient.jpg) repeat-x bottom left; 
+}
+
+/**************************************************************
+   Images
+ **************************************************************/
+
+img.floatRight {
+  margin: 5px 0px 10px 15px;  
+}
+
+img.floatLeft {
+  margin: 5px 15px 10px 0px;
+}
+
+a img {  
+  border: none;
+}
+
+#page a:hover img {  
+  /* Fixes IE bug - IE doesn't correctly apply the style on a:hover so need to mask it */
+  border: 2px solid #FFF !important;
+  border: 2px solid #8BE6FA;
+}

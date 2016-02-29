@@ -1,0 +1,220 @@
+@charset "UTF-8";
+/**
+ * "Yet Another Multicolumn Layout" - (X)HTML/CSS Framework
+ *
+ * (en) Uniform design of standard content elements
+ * (de) Einheitliche Standardformatierungen für die wichtigten Inhalts-Elemente
+ *
+ * @copyright       Copyright 2005-2008, Dirk Jesse
+ * @license         CC-A 2.0 (http://creativecommons.org/licenses/by/2.0/),
+ *                  YAML-C (http://www.yaml.de/en/license/license-conditions.html)
+ * @link            http://www.yaml.de
+ * @package         yaml
+ * @version         3.0.6
+ * @revision        $Revision: 202 $
+ * @lastmodified    $Date: 2008-06-07 14:29:18 +0200 (Sa, 07 Jun 2008) $
+ * @appdef yaml
+ * @modified by     Ron Nitzsche | www.concrete.info
+ */
+
+@media all
+{
+  /**
+   * Fonts
+   * (en) font-family and font-size selection for headings and standard text elements
+   * (de) Zeichensatz und Schriftgrößen für Überschriften und übliche Text-Elemente
+   *
+   * @section content-fonts
+   */
+
+  /* (en) reset font size for all elements to standard (16 Pixel) */
+  /* (de) Alle Schriftgrößen auf Standardgröße (16 Pixel) zurücksetzen */
+  html * { font-size: 100.01%; }
+
+  /* (en) reset monospaced elements to font size 16px in Gecko browsers */
+  /* (de) Schriftgröße von monospaced Elemente auf 16 Pixel setzen */
+  textarea, pre, tt, code {
+    font-family:"Courier New", Courier, monospace;      
+  }
+
+  /* (en) base layout gets standard font size 12px */
+  /* (de) Basis-Layout erhält Standardschriftgröße von 12 Pixeln */
+  body {
+    /* customize_body */ font: normal normal 13px Tahoma, Verdana, Arial, Helvetica, sans-serif; /* customize_body */
+    line-height: 18px;
+    /* customize_body */ color: #BBBBBB; /* customize_body */
+  }
+  
+  a,a:visited,a:active { /* customize_link_body */ color: #222222; /* customize_link_body */ font-weight: bold; background:transparent; text-decoration:none; }
+  a:hover { /* customize_link_hover_body */ color: Green; /* customize_link_hover_body */ font-weight: bold; background:transparent; text-decoration:none; }
+  
+  img {border: 0px}
+  
+  h1,h2,h3,h4,h5,h6{ font-weight:bold; color:#444; margin:0 0 0.25em 0; padding:4px 0px; margin-top:8px; }
+  h1{ font-size:200.00%; line-height:28px } /* 24px */
+  h2{ font-size:166.67%; line-height:24px } /* 20px */
+  h3{ font-size:150.00%; line-height:21px } /* 18px */
+  h4{ font-size:133.33%; line-height:18px } /* 16px */
+  h5{ font-size:116.67%; line-height:16px } /* 14px */
+  h6{ font-size:116.67%; font-style:italic; } /* 14px */
+  p { line-height: 1.5em; margin: 0 0 1em 0; }
+
+  /* ### Lists | Listen  #### */
+
+  ul, ol, dl { list-style-type: none; line-height: 1.3em; margin: 0 0 0.8em 0.8em; }
+  li { list-style-type: none; margin-left: 1.3em; line-height: 1.3em; }
+
+  dt { font-weight: bold; }
+  dd { margin: 0 0 0.8em 1.8em; }
+
+  /* ### text formatting | Textauszeichnung ### */
+
+  cite, blockquote { font-style:italic; }
+  blockquote { margin: 0 0 1em 1.5em; }
+
+  strong,b { font-weight: bold; }
+  em,i { font-style:italic; }
+
+  pre, code { font-family: monospace; font-size: 1.1em; }
+
+  acronym, abbr {
+    letter-spacing: .07em;
+    border-bottom: .1em dashed #c00;
+    cursor: help;
+  }
+
+  /**
+   * Generic Content Classes
+   * (en) standard classes for positioning and highlighting
+   * (de) Standardklassen zur Positionierung und Hervorhebung
+   *
+   * @section content-generic-classes
+   */
+
+  .note { background: #dfd; padding: 1em; border-top: 1px #bdb dotted; border-bottom: 1px #bdb dotted; }
+  .important { background: #ffd; padding: 1em; border-top: 1px #ddb dotted; border-bottom: 1px #ddb dotted; }
+  .warning { background: #fdd; padding: 1em; border-top: 1px #dbb dotted; border-bottom: 1px #dbb dotted; }
+
+  .float_left { float: left; display:inline; margin-right: 1em; margin-bottom: 0.15em; }
+  .float_right { float: right; display:inline; margin-left: 1em; margin-bottom: 0.15em; }
+  .center { text-align:center; margin: 0.5em auto; }
+  
+  div.code {border: 1px solid #ddd; background: #eee; padding: 10px}
+  div.spacer,div.ccm-spacer{ clear:both; font-size:1px; line-height:1px }
+  .noTopSpace{margin-top:0px; padding-top:0px}
+  
+  /**
+   * External Links
+   *
+   * (en) Formatting of hyperlinks
+   * (de) Gestaltung von Hyperlinks
+   *
+   */
+   
+  .page_margins .page {
+    /* customize_body_page */ font: normal normal 13px Tahoma, Verdana, Arial, Helvetica, sans-serif; /* customize_body_page */
+    line-height: 18px;
+    /* customize_body_page */ color: #555555; /* customize_body_page */
+  }
+  .page_margins .page a,a:visited,a:active,a:focus { /* customize_link_page */ color: #222222; /* customize_link_page */ font-weight: bold; background:transparent; text-decoration:none; }
+  .page_margins .page a:hover { /* customize_link_hover_page */ color: #333333; /* customize_link_hover_page */ font-weight: bold; background:transparent; text-decoration:none; }
+  
+  #topnav {
+    /* customize_body_login */ font: normal normal 10px Tahoma, Verdana, Arial, Helvetica, sans-serif; /* customize_body_login */
+    line-height: 14px;
+    /* customize_body_login */ color: #dddddd; /* customize_body_login */
+  }
+  #topnav a,a:visited,a:active,a:focus { /* customize_link_login */ color: #cccccc; /* customize_link_login */ font-weight: bold; background:transparent; text-decoration:none; }
+  #topnav a:hover { /* customize_link_hover_login */ color: #dddddd; /* customize_link_hover_login */ font-weight: bold; background:transparent; text-decoration:none; }
+  
+  #header { 
+    /* customize_body_header */ font: normal normal 13px Tahoma, Verdana, Arial, Helvetica, sans-serif; /* customize_body_header */
+    line-height: 18px;
+    /* customize_body_header */ color: #333333; /* customize_body_header */ 
+  }
+  #header a,a:visited,a:active,a:focus { /* customize_link_header */ color: #222222; /* customize_link_header */ font-weight: bold; background:transparent; text-decoration:none; }
+  #header a:hover { /* customize_link_hover_header */ color: #333333; /* customize_link_hover_header */ font-weight: bold; background:transparent; text-decoration:none; }
+  
+  #nav { 
+    /* customize_body_headerNav */ font: normal normal 13px Tahoma, Verdana, Arial, Helvetica, sans-serif; /* customize_body_headerNav */
+    line-height: 18px;
+    /* customize_body_headerNav */ color: #333333; /* customize_body_headerNav */ 
+  }
+  #nav a,a:visited,a:active,a:focus { /* customize_link_headerNav */ color: #222222; /* customize_link_headerNav */ font-weight: bold; background:transparent; text-decoration:none; }
+  #nav a:hover { /* customize_link_hover_headerNav */ color: #333333; /* customize_link_hover_headerNav */ font-weight: bold; background:transparent; text-decoration:none; }
+   
+  #teaser { 
+    /* customize_body_teaser */ font: normal normal 13px Tahoma, Verdana, Arial, Helvetica, sans-serif; /* customize_body_teaser */
+    line-height: 18px;
+    /* customize_body_teaser */ color: #555555; /* customize_body_teaser */ 
+  }
+  #teaser a,a:visited,a:active,a:focus { /* customize_link_teaser */ color: #444444; /* customize_link_teaser */ font-weight: bold; background:transparent; text-decoration:none; }
+  #teaser a:hover { /* customize_link_hover_teaser */ color: #555555; /* customize_link_hover_teaser */ font-weight: bold; background:transparent; text-decoration:none; }
+  
+  #main { 
+    /* customize_body_main */ font: normal normal 13px Tahoma, Verdana, Arial, Helvetica, sans-serif; /* customize_body_main */
+    line-height: 18px;
+    /* customize_body_main */ color: #555555; /* customize_body_main */ 
+  }
+  #main a,a:visited,a:active,a:focus { /* customize_link_main */ color: #444444; /* customize_link_main */ }
+  #main a:hover { /* customize_link_hover_main */ color: #555555; /* customize_link_hover_main */ }
+  
+  #footer { 
+    /* customize_body_footer */ font: normal normal 13px Tahoma, Verdana, Arial, Helvetica, sans-serif; /* customize_body_footer */
+    line-height: 18px;
+    /* customize_body_footer */ color: #555555; /* customize_body_footer */ 
+  }
+  #footer a,a:visited,a:active,a:focus { /* customize_link_footer */ color: #444444; /* customize_link_footer */ background:transparent; font-weight: bold; }
+  #footer a:hover { /* customize_link_hover_footer */ color: #555555; /* customize_link_hover_footer */ background-color: transparent; text-decoration:underline; }
+ 
+  /**
+   * (en) Emphasizing external Hyperlinks via CSS
+   * (de) Hervorhebung externer Hyperlinks mit CSS
+   *
+   * @section             content-external-links
+   * @app-yaml-default    disabled
+   */
+
+  /*
+  #main a[href^="http://www.yourwebsite.de"],
+  #main a[href^="https://www.yourwebsite.de"]
+  {
+    padding-left: 12px;
+    background-image: url('your_image.gif');
+    background-repeat: no-repeat;
+    background-position: 0 0.45em;
+  }
+  */
+
+  /**
+   * Tables | Tabellen
+   * (en) Generic classes for table-width and design definition
+   * (de) Generische Klassen für die Tabellenbreite und Gestaltungsvorschriften für Tabellen
+   *
+   * @section content-tables
+   */
+
+  table { width: auto; border-collapse:collapse; margin-bottom: 0.5em; }
+  table.full { width: 100%; }
+  table.fixed { table-layout:fixed; }
+
+  th,td { padding: 0.5em; }
+  thead th { background: #444; color: #fff; }
+  tbody th { background: #ccc; color: #333; }
+  tbody th.sub { background: #ddd; color: #333; }
+
+  /**
+   * Miscellaneous | Sonstiges
+   *
+   * @section content-misc
+   */
+
+  hr {
+    color: #fff;
+    background:transparent;
+    margin: 0 0 0.5em 0;
+    padding: 0 0 0.5em 0;
+    border:0;
+    border-bottom: 1px #000 solid;
+  }
+}

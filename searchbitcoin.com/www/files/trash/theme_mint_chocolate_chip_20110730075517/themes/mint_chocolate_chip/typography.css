@@ -1,0 +1,79 @@
+body {
+	font: small Verdana, Sans-serif;
+	line-height: 1.6em;
+	/*customize_text_color*/color: #444444;/*customize_text_color*/
+	}
+
+#header h1 {
+	font-size: 2.0em;
+	}
+
+h1 {
+	padding-top: 10px;
+	font-size: 1.2em;
+	color:#422100
+	}
+
+h2 {
+	font-size: 1em;
+	font-style:italic;
+	color: #422100;
+	}
+
+#innernews p {
+	font-size: .8em;
+	line-height: 1.2em;
+	}
+
+/* ----- Links ----- */
+
+a {
+	/*customize_link_inactive*/color: #6CAB54;/*customize_link_inactive*/
+	}
+
+a:visited {
+	/*customize_link_visited*/color: #422100;/*customize_link_visited*/
+	}
+
+a:hover {
+	/*customize_link_hover*/color: #422100;/*customize_link_hover*/
+	}
+
+#footer a {
+	color: #333333;
+	text-decoration: none;
+	}
+
+#footer a:visited {
+	color: #333333;
+	text-decoration: none;
+	}
+
+#footer a:hover {
+	color: #422100;
+	text-decoration: underline;
+	}
+
+#footer {
+	text-align: center;
+	font-size: .8em;
+	color: #666666;
+	}
+
+#nav li a {
+	text-decoration: none;
+	color: #F1F7EE;
+	}
+	
+#nav li a:hover {
+	color: #FFFFFF;
+	background: #86BA72;
+	
+	}
+	
+#nav li a.active {
+	color: #FFFFFF;
+	background: #86BA72;
+	}
+	
+

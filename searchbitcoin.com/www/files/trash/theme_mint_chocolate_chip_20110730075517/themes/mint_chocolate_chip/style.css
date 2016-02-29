@@ -1,0 +1,151 @@
+/* Mint Chocolate Chip - (c) 2006 andrewstrojny.com */
+
+/* You may use this CSS and use its techniques in your own projects, but keep in mind the unique combination of images, colors, sizes, typography, and positioning ("the design") is copyright (c) 2006 Andrew Strojny */ 
+
+/* Enjoy! */
+
+
+/* ----- Structure and Layout ----- */
+
+body {
+	text-align : center;
+	background-color: #A9CF9C;
+	min-width : 770px ;
+	}
+
+#wrapper {
+	width : 770px;
+	text-align : left ;
+	margin-left : auto ;
+	margin-right : auto ;
+	}
+	
+#header {
+	padding-top: 10px;
+	}
+#header-bkg {
+	width: 770px;
+	height: 119px;
+	margin: 0 auto;
+	background: url(images/header.png) no-repeat;
+	}
+#header-content {
+	padding: 16px 0 0 48px;
+	}
+
+#maincontainer {
+	float: left;
+	width : 770px;
+	background: url(images/container.png) repeat-y;
+	}
+
+#padding {
+	clear: both;
+	padding: 30px 0 0 0;
+	}
+
+#content {
+	float: left;
+	width: 375px;
+	padding: 0 0 10px 40px;
+	}
+
+#newsbox {
+	float: right;
+	padding: 5px 0 0 0;
+	}
+	
+#content-left {
+	float: left;
+	width: 375px;
+	padding: 0 0 10px 0px;
+	}
+
+#newsbox-left {
+	float: left;
+	padding: 5px 0 0 40px;
+	}
+
+#content-hdr {
+	width: 375px;
+	overflow: hidden;
+	}
+
+#innernews {
+	width: 250px;
+	margin: 0 40px 0 0;
+	padding: 10px 10px 10px 10px;
+	background: #EDF3EB;
+	border: 1px solid #DCEAD7;
+	}
+
+/* ----- Navigation -----  */
+
+#nav {
+	float: left;
+	padding: 0 0 2px 13px;
+	margin: 0;
+	}
+	
+#navinner {
+	float: left;
+	width: 743px;
+	height: 41px;
+	background: #A9CE9B;
+	border-top: 2px solid #87BA74;
+	border-bottom: 2px solid #87BA74;
+	}
+	
+#nav ul {
+	margin: 0;
+	padding: 0 0 0 27px;
+	list-style: none;
+	
+	}
+	
+#nav li {
+	float: left;
+	margin: 0;
+	padding: 0 10px 0 0;
+	}
+	
+#nav li a {
+	float: left;
+	text-align: center;
+	margin: 5px 0 0 0;
+	padding: 4px 12px;
+	font-weight: bold;
+	border-bottom: 2px solid #A9CE9B;
+	border-right: 2px solid #A9CE9B;
+	
+	}
+	
+#nav li a:hover {
+	border-bottom: 2px solid #6CAB54;
+	border-right: 2px solid #6CAB54;
+	
+	}
+	
+#nav li a.active {
+	border-bottom: 2px solid #6CAB54;
+	border-right: 2px solid #6CAB54;
+	}
+	
+
+/* ----- Typography ----- */
+
+
+#innernews p {
+	margin-left: 10px;
+	padding: 0 10px 0 10px;
+	border-left: 1px dashed #422100;
+	}
+
+
+/* ------ Footer ----- */
+
+#footer {
+	clear:both;
+	}
+
+	

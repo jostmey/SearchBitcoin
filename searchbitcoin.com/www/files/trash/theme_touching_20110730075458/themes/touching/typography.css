@@ -1,0 +1,24 @@
+body{font-family: Verdana, Arial, SunSans-Regular, Sans-Serif;font-size: 12px; line-height: 18px;  }
+body {  
+	background: #E7E7E7 url('images/body.jpg') top left;
+	/* customize_body */ font: normal normal 12px Verdana; /* customize_body */
+	/* customize_body */ color: #564b47; /* customize_body */
+}
+body#tinymce { color:#564b47; background:#E7E7E7 }
+
+img {border: 0px}
+
+ 
+ 
+a,a:link,a:visited{ /* customize_link */ color: #9A1212; /* customize_link */ }
+a:active{ /* customize_link_active */ color: #9A1212; /* customize_link */ }
+a:hover { /* customize_link_hover */ color: #000000; /* customize_link_hover */ } 
+
+h1,h2,h3,h4,h5{ margin:0px 0px 4px 0px; padding:4px 0px; margin-top:8px }
+h1{ font-size:21px; line-height:28px; text-transform:uppercase; padding:8px 0 16px 0px; }
+h2{ font-size:18px; line-height:24px; color: #9A1212; font-weight: normal; margin:0px; padding:4px 0 12px; }
+h3{ font-size:16px; line-height:21px; padding:0 0 10px 0px;  }
+h4{ font-size:14px; line-height:18px }
+h5{ font-size:13px; line-height:16px }
+ 
+p, pre{ margin:0px;	padding:0 0 12px 0px; }

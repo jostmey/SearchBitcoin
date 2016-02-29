@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btvCard">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="compName" type="X2">
+		</field>
+		<field name="stAddress" type="X2">
+		</field>
+		<field name="stAddress2" type="X2">
+		</field>
+		<field name="city" type="X2">
+		</field>
+		<field name="state" type="X2">
+		</field>
+		<field name="zipCode" type="X2">
+		</field>
+		<field name="phNumber" type="X2">
+		</field>
+	</table>
+</schema>

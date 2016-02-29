@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btContentAroundImage">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="content" type="X2">
+		</field>
+		<field name="fID" type="I">
+			<unsigned />
+			<default value="0" />
+		</field>
+		<field name="link"  type="C" size="255">
+    </field>
+		<field name="newTab" type="L">
+			<default value="0" />
+		</field>
+		<field name="altText" type="C" size="255">
+    </field>
+		<field name="maxWidth" type="I">
+			<unsigned />
+			<default value="0" />
+		</field>
+		<field name="maxHeight" type="I">
+			<unsigned />
+			<default value="0" />
+		</field>
+		<field name="alignment" type="I">
+			<unsigned />
+			<default value="0" />
+		</field>
+		<field name="caption" type="C" size="255">
+		</field>
+	</table>
+</schema>

@@ -1,0 +1,51 @@
+
+body {
+	font-family: Arial;
+	line-height: 23px;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+
+a {
+	color: #0669b8;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #fff;
+}
+
+
+h1 {
+	font-size: 30px;
+	line-height: 40px;
+}
+h2 {
+	font-size: 25px;
+	line-height: 35px;
+}
+
+h3 {
+	font-size: 22px;
+	line-height: 32px;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 30px;
+}
+
+h5 {
+	font-size: 18px;
+	line-height: 28px;
+}
+
+h6 {
+	font-size: 16px;
+	line-height: 26px;
+}
+

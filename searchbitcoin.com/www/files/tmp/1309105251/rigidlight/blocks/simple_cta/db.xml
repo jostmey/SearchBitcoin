@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btSimpleCta">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="ctaTitle" type="X2">
+		</field>
+		<field name="ctaDesc" type="X2">
+		</field>
+		<field name="pageID" type="I">
+		</field>
+	</table>
+</schema>

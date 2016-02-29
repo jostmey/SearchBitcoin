@@ -1,0 +1,11 @@
+s:776:"<p><strong><a name="blogger"></a>Blogger / Blogspot:</strong></p>
+<p>A special gadget has been written for adding the BTC Economy to Blogger and Blogspot pages. To embed the gadget login to your blog follow these steps.<span style="line-height: normal;">&nbsp;</span></p>
+<p><span style="line-height: normal;"><br /></span></p>
+<ol>
+<li>Sign-in to your page and click "<em>Design"</em>.</li>
+<li>Click "<em>Add a Gadget"</em> where you want to add the BTC Economy.</li>
+<li>In the pop-up click "<em>Add you own".</em></li>
+<li>Add the following URL into the text box, click submit and save.<ol> </ol></li>
+</ol><ol> </ol>
+<p style="padding-left: 30px;">http://www.api.searchbitcoin.com/apps/btceconomy/hooks/blogspot.xml</p>
+<p style="padding-left: 30px;">&nbsp;</p>";

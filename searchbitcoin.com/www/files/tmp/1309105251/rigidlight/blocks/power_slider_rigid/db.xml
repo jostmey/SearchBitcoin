@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+
+	<table name="btPowerSlideRigid">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="fsID" type="I"><unsigned /></field>		
+		<field name="playback" type="C" size="50"></field>	
+		<field name="duration" type="I"><unsigned /></field>
+		<field name="fadeDuration" type="I"><unsigned /></field>
+		
+		<field name="powerSlideHeight" type="X2">
+		</field>
+		<field name="powerSlideWidth" type="X2">
+		</field>
+		<field name="transitionType" type="X2">
+		</field>
+		<field name="slideDelay" type="X2">
+		</field>
+		<field name="prevNextArrows" type="X2">
+		</field>
+		<field name="prevBtnOffsetX" type="X2">
+		</field>
+		<field name="prevBtnOffsetY" type="X2">
+		</field>
+		<field name="nextBtnOffsetX" type="X2">
+		</field>
+		<field name="nextBtnOffsetY" type="X2">
+		</field>
+		
+		<field name="paginationToggle" type="X2">
+		</field>	
+		<field name="paginationOffsetY" type="X2">
+		</field>
+		<field name="paginationAlignment" type="X2">
+		</field>
+	</table>
+	
+	<table name="btPowerSlideImgRigid">
+		<field name="slideshowImgId" type="I">
+			<key />
+			<autoincrement />
+			<unsigned />
+		</field>
+		<field name="bID" type="I"><unsigned /></field>
+		<field name="fID" type="I"><unsigned /></field>	
+		<field name="pageID" type="I" ><unsigned /></field>	
+		<field name="powerSlidePhraseTitle" type="X2" ></field>	
+		<field name="powerSlidePhraseDesc" type="X2" ></field>	
+		
+		<field name="groupSet" type="I"><unsigned /></field>
+		<field name="position" type="I"><unsigned /></field>							
+	</table>
+	
+</schema>

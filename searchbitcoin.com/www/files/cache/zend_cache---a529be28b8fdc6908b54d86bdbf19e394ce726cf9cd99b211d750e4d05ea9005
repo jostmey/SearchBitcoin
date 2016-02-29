@@ -1,0 +1,113 @@
+s:6611:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Contact Us</title>
+<meta name="description" content="Contact us as search bitcoin" />
+<meta name="keywords" content="Bitcoins, contact" />
+<meta name="generator" content="concrete5 - 5.4.2" />
+
+<script type="text/javascript">
+var CCM_DISPATCHER_FILENAME = '/index.php';var CCM_CID = 75;var CCM_EDIT_MODE = false;var CCM_ARRANGE_MODE = false;var CCM_IMAGE_PATH = "/updates/concrete5.4.2/concrete/images";
+var CCM_TOOLS_PATH = "/index.php/tools/required";
+var CCM_REL = "";
+
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="/updates/concrete5.4.2/concrete/css/ccm.base.css?v=0474fb6fcadda943b96274f014fd981e" />
+<script type="text/javascript" src="/updates/concrete5.4.2/concrete/js/jquery.js?v=0474fb6fcadda943b96274f014fd981e"></script>
+<script type="text/javascript" src="/updates/concrete5.4.2/concrete/js/ccm.base.js?v=0474fb6fcadda943b96274f014fd981e"></script>
+<link rel="stylesheet" type="text/css" href="/updates/concrete5.4.2/concrete/blocks/form/view.css?v=0474fb6fcadda943b96274f014fd981e" />
+
+<!-- CSS -->
+<link rel="stylesheet" media="screen" type="text/css" href="/index.php/tools/css/themes/minifiedtheme/main.css" />
+<link rel="stylesheet" media="screen" type="text/css" href="/index.php/tools/css/themes/minifiedtheme/typography.css" />
+
+<link rel="stylesheet" href="/packages/minifiedtheme/themes/minifiedtheme/print.css" media="print" type="text/css" />
+<link rel="stylesheet" href="/packages/minifiedtheme/themes/minifiedtheme/css/uniform.default.css" type="text/css" media="screen" charset="utf-8" />
+
+<!-- JavaScripts -->
+<script src="/packages/minifiedtheme/themes/minifiedtheme/js/cufon-yui.js" type="text/javascript"></script>
+<script src="/packages/minifiedtheme/themes/minifiedtheme/js/Museo_Sans_500.font.js" type="text/javascript"></script>
+<script src="/packages/minifiedtheme/themes/minifiedtheme/js/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="/packages/minifiedtheme/themes/minifiedtheme/js/viva.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="content">
+	
+	<div id="header">
+		<div class="logo">
+		<!--
+			--><a href="/" ><h1><p>Search Bitcoin</p></h1></a><!--
+			-->
+		</div>
+		
+		<div id="navigation">
+			<ul id="nav"><li class="nav-path-selected"><a class="nav-path-selected" href="/" >Home</a></li><li><a href="/learn-about-bitcoins/"  >Learn About Bitcoins</a></li><li><a href="/vendors/"  >Add Your Webpage</a></li><li><a href="/plugins/"  >Plugins</a><ul><li><a href="/plugins/btc-economy-plugin/"  >BTC Economy Plugin</a></li></ul></li><li><a href="/blog/"  >Blog</a><ul><li><a href="/blog/beyond-bitcoin-trading-an-experiment-is-born/"  >Beyond Bitcoin Trading - An Experiment Is Born</a></li><li><a href="/blog/most-sought-after-bitcoin-merchandise/"  >Most Sought After Bitcoin Merchandise</a></li></ul></li><li class="nav-selected nav-path-selected"><a class="nav-selected nav-path-selected"  href="/contact-us/">Contact Us</a></li></ul>		</div>
+		
+		<div id="top-text">
+			<h5>We love hearing from our users. We welcome your suggestions, criticisms, and questions.</h5>		</div>
+		
+	</div>
+	
+<div id="image-placeholder">
+	</div>
+<div id="sidebar" class="sidebar-left">
+	<h5>Here are the names of some of the biggest players in the bitcoin community.</h5><p><a title="Neo" href="http://en.bitcoin.it/wiki/Satoshi_Nakamoto">Satoshi Nakamoto</a>: Satoshi is the founder of bitcoin and the author of the first bitcoin software. No one really knows who he or she is because Satoshi has preferred to remain anonymous.</p><p><a title="Morpheus" href="http://gavinthink.blogspot.com/">Gavin Andresen</a>: Gavin has taken over Satoshi's role as lead developer of the bitcoin software.</p></div>
+
+<div id="sub-content-right" class="content-right">
+		<h1>Contact Us</h1>
+	<p>Use the online form to send us a message. We will get back to you as quickly as possible.</p><a name="1309044364"></a><br/>
+<form enctype="multipart/form-data" id="miniSurveyView76" class="miniSurveyView" method="post" action="/index.php?cID=75&amp;bID=76&amp;arHandle=Main&amp;ccm_token=1324236638:25b0cf3bda8ee379f38e9d25421c475d&amp;btask=passthru&amp;method=submit_form#1309044364">
+		<input name="qsID" type="hidden" value="1309044364" />
+	<input name="pURI" type="hidden" value="/contact-us/" />
+	<table class="formBlockSurveyTable"><tr>
+						        <td valign="top" class="question"><label for="Question1">Name</label></td>
+						        <td valign="top"><input name="Question1" id="Question1" type="text" value="" /></td>
+						      </tr><tr>
+						        <td valign="top" class="question"><label for="Question2">Email Address&nbsp;<span class="required">*</span></label></td>
+						        <td valign="top"><input name="Question2" id="Question2" type="text" value="" /></td>
+						      </tr><tr>
+						        <td valign="top" class="question"><label for="Question3">Comments&nbsp;<span class="required">*</span></label></td>
+						        <td valign="top"><textarea name="Question3" id="Question3" cols="50" rows="5" style="width:95%"></textarea></td>
+						      </tr><tr><td>&nbsp;</td><td><input class="formBlockSubmitButton ccm-input-button" name="Submit" type="submit" value="Submit" /></td></tr></table> 
+</form><p>You can also email us directory at <a title="Email address" href="mailto:searchbitcoin@gmail.com">searchbitcoin@gmail.com</a>.</p></div>
+
+
+<br style="clear: both;" /><br />
+	<br style="clear: both;" />
+	
+	</div>
+	
+</div>
+
+	<div id="footer">
+	<div class="inner-footer">
+	<span class="powered-by"><a href="http://www.concrete5.org" title="concrete5 - open source content management system for PHP and MySQL">concrete5 - open source CMS</a></span>
+			&copy; 2011 <a href="/">Search Bitcoin</a>.
+			&nbsp;&nbsp;
+			All rights reserved.							<span class="sign-in"><a href="/index.php/login/">Sign In to Edit this Site</a></span>
+			</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23915821-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></body>
+</html>";

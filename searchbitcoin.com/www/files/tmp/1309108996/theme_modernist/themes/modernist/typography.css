@@ -1,0 +1,54 @@
+/*
+Theme Name: Modernist
+Theme URI: http://www.rodrigogalindez.com/themes/modernist
+Description: A flexible, minimal theme focused on great typography. An invisible design to let you and your users focus on your content. Based on the design ideas of Jan Tschichold, Josef Müller-Brockmann, Dieter Rams, and other modernists. Supports widgets, SEO optimized, clean and documented code, fast to load, no plugins required. Works in WordPress 2.7 and superior. Works in IE 6 & superior and all versions of Safari/Firefox/Opera. Includes CSS3 buttons.
+Version: 2.5
+Author: Rodrigo Galindez
+Author URI: http://www.rodrigogalindez.com
+Tags: white, blue, black, silver, light, two-columns, fixed-width, threaded-comments, sticky-post, custom-header, custom-colors, custom-menu
+License: GNU General Public License v2.0
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+
+/* -------------------------------- [ General Elements ] */
+
+body {
+	font-family: Georgia, "Times New Roman", serif;
+	font-size: 62.5%;
+	background-image: url(images/bg.gif);
+	background-repeat: repeat;
+	background-position: top left;
+	/* customize_body */ color: #444; /* customize_body */
+}
+
+#wrapper a {
+	/* customize_link */ color: #21759B; /* customize_link */
+	border-bottom: 1px dotted #ccc;
+	text-decoration: none;
+}
+
+#wrapper a:hover {
+	/* customize_link_hover */ color: #1F536C; /* customize_link_hover */
+}
+
+.post h1,
+.post h2 {
+	margin: 1.5em 0 .5em 0;
+	font-size: 2em;
+	/* customize_headers */ color: #333; /* customize_headers */
+}
+
+.post h3 {
+	margin: 2em 0 .5em 0;
+	font-size: 1.7em;
+	/* customize_headers */ color: #333; /* customize_headers */
+}
+
+.post h4,
+.post h5,
+.post h6 {
+	margin: 2em 0 .5em 0;
+	font-size: 1.4em;
+	/* customize_headers */ color: #333; /* customize_headers */
+}

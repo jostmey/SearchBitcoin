@@ -1,0 +1,12 @@
+s:561:"
+<div id="HTMLBlock597" class="HTMLBlock">
+<script type="text/javascript">// <![CDATA[
+function popUp(URL)
+{
+ day=new Date();
+ id=day.getTime();
+ eval("page" + id + " = window.open(URL, '" + id + "', 'toolbar=0,scrollbars=1,location=0,statusbar=0,menubar=0,resizable=0,width=500,height=600');");
+}
+// ]]></script>
+<p class="min-button" style="text-align: center; margin-left: 22px; margin-top: 12px; margin-bottom: 12px; padding: 15px;" onclick="javascript:popUp('http://api.searchbitcoin.com/backend/index.php?r=frontend/join')">ADD WEBSITE</p>
+</div>";

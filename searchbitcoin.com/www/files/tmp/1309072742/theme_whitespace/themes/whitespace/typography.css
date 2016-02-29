@@ -1,0 +1,162 @@
+body {
+	/* customize_background */ background: #FFFFFF; /* customize_background */
+	/* customize_body */ color: #222222; /* customize_body */
+	/* customize_body */ font: normal normal 12px Arial; /* customize_body */
+	}
+	
+/************************************************
+*	Hyperlinks									*
+************************************************/
+
+#wrap a, #wrap a:visited {
+	/* customize_link */ color: #017F8D; /* customize_link */
+	}
+#wrap a:hover {
+	/* customize_link_hover */ color: #017F8D; /* customize_link_hover */
+	}
+
+	
+/************************************************
+*	Header  									*
+************************************************/
+
+	
+#header a {
+	font-family: Georgia, Helvetica, Sans-Serif;
+	font-size: 36px;
+	color: #222222;
+	}
+
+#header a:hover{
+	color: #222222;
+	}
+		
+#headerright ul li a, #headerright ul li a:visited {
+	color: #999999;
+	font-size: 14px;
+	font-weight: normal;
+	}
+		
+#headerright ul li a:hover, #headerright ul li.nav-selected a {
+	color: #000000;
+	}
+
+	
+/************************************************
+*	Content 					     		    * 
+************************************************/
+
+#content h1 {
+	color: #000000;
+	font-size: 26px;
+	font-family: Georgia, Helvetica, Sans-Serif;
+	font-weight: normal;
+	}
+	
+#content h1 a, #content h1 a:visited  {
+	color: #000000;
+	}
+
+#content h1 a:hover {
+	color: #017F8D;
+	}
+	
+#content h2 {
+	color: #000000;
+	font-size: 20px;
+	font-family: Georgia, Helvetica, Sans-Serif;
+	font-weight: normal;	
+}
+
+#content h3 {
+	color: #000000;
+	font-size: 18px;
+	font-family: Georgia, Helvetica, Sans-Serif;
+	font-weight: normal;	
+}
+	
+#content h4 {
+	color: #000000;
+	font-size: 16px;
+	font-family: Georgia, Helvetica, Sans-Serif;
+	font-weight: normal;
+	}
+	
+#content h5 {
+	color: #000000;
+	font-size: 14px;
+	font-family: Georgia, Helvetica, Sans-Serif;	
+}
+	
+
+/************************************************
+*	Left Sidebar 		    			   	    * 
+************************************************/
+	
+#l_sidebar h3 {
+	color: #000000;
+	font-size: 12px;
+	font-family: Arial, Tahoma, Verdana;
+	font-weight: bold;
+	}
+	
+#l_sidebar ul li a, #l_sidebar ul li a:visited {
+	color: #017F8D;
+	}
+
+#l_sidebar ul li a:hover {
+	color: #017F8D;
+	}
+	
+/************************************************
+*	Right Sidebar 		    	    	        * 
+************************************************/
+	
+#r_sidebar h3 {
+	color: #000000;
+	font-size: 12px;
+	font-family: Arial, Tahoma, Verdana;
+	font-weight: bold;
+	}
+
+#r_sidebar ul li a, #r_sidebar ul li a:visited {
+	color: #017F8D;
+	}
+
+#r_sidebar ul li a:hover {
+	color: #017F8D;
+	}
+	
+/************************************************
+*	Footer  									*
+************************************************/
+
+#footer p {
+	color: #000000;
+	font-size: 11px;
+	}
+	
+#footer h2 {
+	color: #000000;
+	font-family: Arial, Tahoma, Verdana;
+	font-size: 12px;
+	font-weight: bold;
+	}
+
+#footer a {
+	color: #017F8D;
+	}
+
+#footer a:hover {
+	color: #017F8D;
+	}
+	
+#footer ul li a {
+	color: #000000;
+}
+
+#footer ul li a:hover {
+	background: #E5E5E5;
+	color: #017F8D;
+	}
+/* customize_miscellaneous */ /* customize_miscellaneous */

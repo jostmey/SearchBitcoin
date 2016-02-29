@@ -1,0 +1,35 @@
+body {
+        /* customize_body */ color: #000; /* customize_body */
+        /* customize_body */ font-family: Arial, Verdana, sans-serif; /* customize_body */
+
+}
+
+h1 {    /* customize_h1 */ font: 20px 'Arial', Verdana, sans-serif; /* customize_h1 */
+}
+
+h2 {
+        /* customize_h2 */ font: 95% 'Arial', Verdana, sans-serif; /* customize_h2 */
+
+}
+
+h3 {
+      /* customize_h3 */ font-family: Arial, Verdana, sans-serif; /* customize_h3 */
+
+}
+
+
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+	/* customize_link */  color: #000; /* customize_link */
+}
+
+a:hover {
+	text-decoration: underline;
+	/* customize_link_hover */ color: #688000; /* customize_link_hover */
+}
+
+p {       
+	font: 14px 'Arial', Verdana, sans-serif; 
+}

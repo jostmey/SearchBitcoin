@@ -1,0 +1,13 @@
+O:11:"ConfigValue":4:{s:5:"value";s:486:"<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23915821-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>";s:9:"timestamp";s:19:"2011-06-26 00:20:40";s:3:"key";s:18:"SITE_TRACKING_CODE";s:5:"error";s:0:"";}

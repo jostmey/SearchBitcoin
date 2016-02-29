@@ -1,0 +1,53 @@
+s:5710:"<table style="float: left; margin: 15px;" width="100">
+<tbody>
+<tr>
+<td><img style="float: left;" src="/files/cache/332b1013489808e79a5ebdd2b8a4a079.jpg" alt="crystal_ball.jpg" width="200" height="254" /></td>
+</tr>
+<tr>
+<td>Figure 1. I feel like I see the future.</td>
+</tr>
+</tbody>
+</table>
+<p>I like to think of bitcoins as an experiment &ndash; a forerunner for currencies in the distant future. Bitcoins are unique in that the currency exists entirely in the digital realm, is designed from the ground up using encryption, and is maintained by a network of peer-to-peer computers that form the backbone of the economy. The currency allows for anonymous trading and there are no transaction fees (right now, the banks get a percentage of every online transaction).</p>
+<p>&nbsp;</p>
+<table style="float: right; margin: 15px;" width="75">
+<tbody>
+<tr>
+<td><img style="float: right;" src="/files/cache/d8fa3a4010c9caae26a8de0c967dce9f.jpg" alt="alpacasock.jpg" width="125" height="228" /></td>
+</tr>
+<tr>
+<td>Figure 2. I feel like my feet are warm.</td>
+</tr>
+</tbody>
+</table>
+<p>People new to bitcoins often ask what can I do with them? I found the question difficult to answer. The standard reply was that you could buy alpaca socks - an answer I found dissatisfying. Clearly this was a problem for the burgeoning currency. As I wondered about this question more and more, I noticed numerous online stores starting to accept bitcoins as a form of payment. It was exciting to discover each new site as it popped-up, but each of these sites seemed to have the same problem as all the others &ndash; they were &ldquo;empty houses&rdquo;. None of the stores offered a compelling selection of merchandise or services. Each site left you feeling a little like the last person to arrive at a garage sale.<br /><br />I saw the bitcoin economy as a massive set of tiny garage sales. I had many midnight conversations on the subject with my confederate. Together we came to the conclusion that first successful bitcoin store would be Craigslist -&nbsp; a logical assumption given that craigslist is the biggest of all garage sales. We began following the people on the site who were accepting bitcoins as the method of payment. We even started reposting craigslist offerings from these individuals to help promote the bitcoin economy &ndash; a tedious process indeed.<br /><br />A few months passed, and nothing really happened on craigslist. It was disappointing. Meanwhile, even more bitcoin stores opened up, but as was the case with each one of these stores, I could count their entire stock of merchandise on my fingers. Clearly, there was a need to unify these stores to create a shopping mall out of the hundreds of outlets. This was the motivation for beginning my experiment, which all started on a cold Friday night in the Windy City.</p>
+<table style="float: left; margin: 15px;" width="150">
+<tbody>
+<tr>
+<td><img style="float: left;" src="/files/2913/0940/0932/neo.jpg" alt="neo.jpg" width="250" height="146" /></td>
+</tr>
+<tr>
+<td>Figure 3. I feel like Neo once again as I fly through the lines of computer code.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>That night, I downloaded an open-source package for crawling and indexing the web. I added my own modifications to the code, and before I went to bed I had a large MySQL database of all the items for sale in the bitcoin community. I then used a PHP framework to generate HTML pages for all the entries in my database. I scrolled through the pages containing the entries in my database, and I saw I could buy just about everything I needed. Food, deodorant, shoes to go with the alpaca socks, and even a new laptop were all right in front of me in my database. It was impressive, and at that moment I realized that bitcoins could become something more than cryptographic keys traded at Mt Gox. <em>(So maybe it took me more than just one night to do all of this)</em></p>
+<table style="float: right; margin: 15px;" width="125">
+<tbody>
+<tr>
+<td><img style="float: right;" src="/files/cache/ba65968c2889c21514edcca67214fd0e.jpg" alt="spock.jpg" width="225" height="203" /></td>
+</tr>
+<tr>
+<td>Figure 4. Now I feel like Spock reading observations from a tricorder.</td>
+</tr>
+</tbody>
+</table>
+<p>&nbsp;</p>
+<p>And now on to this experiment that I keep mentioning. I want to measure and observe the volume of merchandise and services being bought and sold in the bitcoin community to see if the bitcoins are actually starting to be used as on online currency. At the same time, I want to help unify the bitcoin stores together under a single location on the web. To that end, I&rsquo;ve decided to list the items in my database in a live feed that displays each entry for a few seconds. Each time someone clicks on an item to buy, they will be redirected to the appropriate bitcoin store. I&rsquo;ve setup the feed so that I can track each click to see if people are buying stuff. Over time, I hope to measure the number of people wanting to buy stuff with their bitcoins.</p>
+<p>&nbsp;</p>
+<div style="margin-left: 135px; width: 450px;">
+<script src="http://api.bitcoinbulletin.com/btceconomy" type="text/javascript"></script>
+</div>
+<p>&nbsp;</p>
+<p>The feed can be easily embedded into any webpage. It is my hope that people will continue to use the plugin so that I can track the clicks. In time, I will make my statistics and findings publicly available. Anyone who wants to add items to the feed may do so by contacting me, and there will be no fees for having their merchandise added. Now, get started with the experiment and start clicking on stuff that you can buy with bitcoins!</p>";

@@ -1,0 +1,278 @@
+/* ======================================================== */
+/*	Created by Devit Schizoper 								*/
+/*	Created HomePages http://LoadFoo.starzonewebhost.com	*/
+/*	Created Day 01.12.2006 									*/
+/* ======================================================== */
+
+
+body {
+	margin: 0px; 
+}
+
+body #page{ 
+	background: url(./img/top_bg.gif);
+	background-repeat: repeat-x; 
+}
+
+#wrap p {
+	line-height: 17px;
+	margin: 11px 0 10px 0;
+	padding: 0px;
+}
+
+#wrap h2 {
+	color: #9f9f9f;
+	margin:0px;
+	padding:0px;
+	font-size: 15px;
+}
+
+#wrap ul {
+	font-size: 10px;
+	margin:0;
+	padding:0;
+	list-style-image: url(./img/bullet.gif);
+} 
+
+#wrap a:hover {
+	text-decoration: none;
+}
+
+#wrap blockquote{
+	background: #F7FDE3; 
+	padding: 10px;
+}
+
+
+/**** Main Container ***/
+
+
+#wrap {
+       margin-left: auto;
+       margin-right: auto;
+       width: 730px;
+}
+
+
+/**** Top ***/
+
+
+#wrap #top {
+	width: 100%;
+	height: 88px;
+	color: #fff;
+	background: #000 url(./img/top_bg.gif);
+	overflow:hidden;
+	position:relative;
+	top:0px;
+	left:0px;
+}
+
+#wrap #top h2 {
+	color: White;
+	letter-spacing: 3px;
+	font-size: 28px;
+	line-height:32px;
+	font-weight: normal;
+	position: relative;
+	margin: 0px;
+	top:12px;
+	display:block;
+	float:left;
+	background: url(./img/bg_t.gif) no-repeat;
+	padding-left: 10px;
+}
+
+#wrap #top h2 a {
+	color: white;
+	text-decoration: none;
+}
+
+#wrap #top h2 a:hover {
+        color: #93B300;
+}
+
+
+/**** Main Menu ***/
+
+
+#wrap #menu {
+	display: block;
+	position:absolute;
+	right:0px;
+	top:49px;
+	height:20px; 
+}
+
+#wrap #menu ul {
+	margin: 0;
+	list-style: none;
+}
+
+#wrap #menu li {
+	display: block;
+	float: left;
+	white-space: nowrap;
+}
+
+#wrap #menu li a {
+	display: block;
+	padding: 8px 20px 12px 20px;
+	text-decoration: none;
+	color: #fff;
+	font-weight: bold;
+}
+
+* html #wrap #menu a {width:1%;}
+
+#wrap #menu li a:hover {
+	background: url(./img/bg_menu.gif);
+}
+
+#wrap #menu li a.current,#menu li a.nav-selected {
+	letter-spacing: 1px;
+	color: gray;
+	background: url(./img/bg_menu.gif);
+}
+
+#wrap #menu li a.current:hover {
+	color: #fff;
+}
+
+
+/**** Content Container ***/
+
+
+#wrap #content {
+	width: 100%;
+	margin-top:30px;
+}
+
+#wrap #content h2 {
+	margin: 0;
+	padding: 10px 0 10px 0;
+}
+
+
+/**** Content ***/
+
+
+#wrap #left ul {
+	padding: 15px 0 15px 35px;
+	margin:0;
+}
+
+#wrap #left li {
+	margin-bottom:5px;
+}
+
+#wrap #left {
+	width: 450px;
+	float:left;
+	display: block;
+       /*margin-left: 20px;*/
+	display: inline;
+}
+
+
+/**** Sidebar ***/
+
+
+#wrap #right {
+	width: 250px; 
+	float: right;
+	display:block;
+	margin-top: 10px;
+	clear:right;
+}
+
+#wrap #right .box {
+	width: 100%;
+	background: #F6F9FB;
+	border: 1px solid #E1E1E1;
+	/*padding:10px 10px 15px 10px;*/
+	float: right;
+	margin-bottom:16px;
+}
+
+#wrap #right .box .boxInner{
+	padding: 8px 
+}
+
+#wrap #right .box h2 {
+	font-size: 1.1em;
+	margin: 0px 0 0px 0;
+	padding:0px 0 5px 0;
+}
+
+#wrap #right .box a {
+	margin: 10px 0 10px 0;
+	color: #93B300;
+	font-size: 10px;
+}
+
+#wrap #right .box p {
+	margin: 5px 0 10px 0;
+	line-height: 15px;
+}
+
+#wrap #right .box ul {
+	padding: 0 0 7px 20px;
+	margin:10px 0 10px 0;
+}
+
+#wrap #right .box li {
+	margin-top:5px;
+}
+
+#wrap #nav{ list-style: none; margin: 2.0em 0; width: 25em; float: right;}
+#wrap #nav li{ padding: 0; margin: 0; }
+#wrap #nav a{
+	display: block;
+	height: 2.0em;
+	padding: 0.3em 0.3em 0.3em 0.8em;
+	border-bottom: 2px; /*solid #1a1a1a*/
+	border-top: 2px; /*solid #1a1a1a*/
+	color: #93B300;
+	background-color: #F7F9FB;
+	font-weight: bold;
+	text-decoration: none;
+	}
+
+#wrap #nav a:hover{
+	color: #1a1a1a;
+	background: url(./img/bg_t.gif) no-repeat;
+	background-color: #fff;
+	font-weight: bold;
+	}	
+
+/**** Clear Div ***/
+
+
+#wrap #clear {
+	display: block;
+	clear: both;
+	width: 100%;
+	height:1px;
+	overflow:hidden;
+}
+
+
+/**** Footer ***/
+
+
+#wrap #footer {
+    margin: 40px auto 0 auto;
+	text-align: center;
+	border-top: dotted 1px gray;
+	padding: 20px 0 20px 0;
+	width: 100%;
+	font-size:11px;
+}
+#wrap #footer #powered-by{ float:right; padding: 10px; text-align:right; padding-right:0px; }
+#wrap #footer #footerLinks { padding:10px; text-align:left; padding-left:0px; }
+
+#wrap #footer p {
+	margin: 0px;
+	padding: 0;
+}

@@ -1,0 +1,21 @@
+Version 1.0 -- Initial version
+Version 1.1 -- Fixed a bug (database error if the maxWidth or maxHeight was
+  blank), removed some unnecessary logging.  Verified block is searchable.
+Version 1.2 -- Added a clearing div above the block (in addition to the one below it) 
+  and wrapped the whole block in a div -- this should eliminate the chance of breaking a floating layout
+  Also handled the case where the caption is wider than the image.  Now the div containing
+  the caption and image has the same width as the image.
+  Removed the <style> tags from the template and replaced them with inline styles
+  to produce valid HTML.
+Version 1.21 -- Fixed bug, previously set checkbox was not showing as set in edit mode.
+Version 1.22 -- Fixed bug: When editing the block, an attempt to replace the image was
+  resulting in a link to the image being inserted in the content block and the original
+  image left unchanged.  This was being caused by the fact that the ccm_chooseAsset method
+  in editor_init was receiving the callback from the asset library instead of the image
+  helper code.  To fix the bug, I removed that method from editor_init.  I tried
+  to leave the ability to insert a file link in the content block, but still got the conflict.
+  Removed both the 'Add Image' and 'Add File options from editor_controls (after copying
+  that element inside the package).
+  Also added validation if no Image is selected and combined most of the common code
+  in add.php and edit.php into a new template: form.php
+Version 1.23 -- Minor: removed Log::addEntry() calls inadvertently left in the block controller.

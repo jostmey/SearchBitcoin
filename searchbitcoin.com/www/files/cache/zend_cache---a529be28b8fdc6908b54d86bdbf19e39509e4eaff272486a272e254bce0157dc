@@ -1,0 +1,184 @@
+s:8311:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Search bitcoin</title>
+<meta name="description" content="Discover what you can buy with bitcoin using our live feed and web-search." />
+<meta name="keywords" content="Bitcoin, Search, Find, Trade, Aggregate, Shop, Store, Merchandise, Products, Services, Classifieds, Advertisement" />
+<meta name="generator" content="concrete5 - 5.4.2" />
+
+<script type="text/javascript">
+var CCM_DISPATCHER_FILENAME = '/index.php';var CCM_CID = 1;var CCM_EDIT_MODE = false;var CCM_ARRANGE_MODE = false;var CCM_IMAGE_PATH = "/updates/concrete5.4.2/concrete/images";
+var CCM_TOOLS_PATH = "/index.php/tools/required";
+var CCM_REL = "";
+
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="/updates/concrete5.4.2/concrete/css/ccm.base.css?v=0474fb6fcadda943b96274f014fd981e" />
+<script type="text/javascript" src="/updates/concrete5.4.2/concrete/js/jquery.js?v=0474fb6fcadda943b96274f014fd981e"></script>
+<script type="text/javascript" src="/updates/concrete5.4.2/concrete/js/ccm.base.js?v=0474fb6fcadda943b96274f014fd981e"></script>
+<link rel="stylesheet" type="text/css" href="/externals/home/main.css" />
+<script type="text/javascript" src="/externals/shared/jquery-tmpl.min.js"></script>
+<script type="text/javascript" src="/externals/home/main.js"></script>
+<!-- CSS -->
+<link rel="stylesheet" media="screen" type="text/css" href="/index.php/tools/css/themes/minifiedtheme/main.css" />
+<link rel="stylesheet" media="screen" type="text/css" href="/index.php/tools/css/themes/minifiedtheme/typography.css" />
+
+<link rel="stylesheet" href="/packages/minifiedtheme/themes/minifiedtheme/print.css" media="print" type="text/css" />
+<link rel="stylesheet" href="/packages/minifiedtheme/themes/minifiedtheme/css/uniform.default.css" type="text/css" media="screen" charset="utf-8" />
+
+<!-- JavaScripts -->
+<script src="/packages/minifiedtheme/themes/minifiedtheme/js/cufon-yui.js" type="text/javascript"></script>
+<script src="/packages/minifiedtheme/themes/minifiedtheme/js/Museo_Sans_500.font.js" type="text/javascript"></script>
+<script src="/packages/minifiedtheme/themes/minifiedtheme/js/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="/packages/minifiedtheme/themes/minifiedtheme/js/viva.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="content">
+	
+	<div id="header">
+		<div class="logo">
+		<!--
+			--><a href="/" ><h1><p>Search Bitcoin</p></h1></a><!--
+			-->
+		</div>
+		
+		<div id="navigation">
+			<ul id="nav"><li class="nav-selected nav-path-selected"><a class="nav-selected nav-path-selected"  href="/">Home</a></li><li><a href="/learn-about-bitcoins/"  >Learn About Bitcoins</a></li><li><a href="/vendors/"  >Add Your Webpage</a></li><li><a href="/plugins/"  >Plugins</a><ul><li><a href="/plugins/btc-economy-plugin/"  >BTC Economy Plugin</a></li></ul></li><li><a href="/blog/"  >Blog</a><ul><li><a href="/blog/beyond-bitcoin-trading-an-experiment-is-born/"  >Beyond Bitcoin Trading - An Experiment Is Born</a></li><li><a href="/blog/most-sought-after-bitcoin-merchandise/"  >Most Sought After Bitcoin Merchandise</a></li></ul></li><li><a href="/contact-us/"  >Contact Us</a></li></ul>		</div>
+		
+		<div id="top-text">
+					</div>
+		
+	</div>
+	
+<div id="image-placeholder">
+	</div>
+
+<div id="sub-content-full">
+	<div id="ccm-layout-wrapper-126" class="ccm-layout-wrapper"><div id="ccm-layout-main-24-1" class="ccm-layout ccm-layout-table  ccm-layout-name-Main-Layout-1 "><div class="ccm-layout-row ccm-layout-row-1"><div class="ccm-layout-24-col-1 ccm-layout-cell ccm-layout-col ccm-layout-col-1 first" style="width:33%"><div class="column_container">
+	<div class="column">
+		<div class="column_header">
+			<div class="column_header_text">Live Feed</div>
+		</div>
+		<div class="column_content" id="feed_content"></div>
+	</div>
+</div>
+</div><div class="ccm-layout-24-col-2 ccm-layout-cell ccm-layout-col ccm-layout-col-2 " style="width:33%"><div class="column_container">
+	<div class="column">
+		<div class="column_header">
+			<div class="column_header_text">Search Engine</div>
+		</div>
+		<div class="column_instructions" id="search_instructions">Search for<br/>any item in the<br/>feed.</div>
+		<div class="column_content">
+			<div id="search_box">
+				<form id="search_form">
+					<input id="search_text" type="text" value="Type Here" />
+					<input class="min-button" id="search_button" type="submit" value="Search" />
+				</form>
+			</div>
+			<hr id="search_divider" />
+			<div id="search_content"></div>
+		</div>
+	</div>
+</div>
+
+</div><div class="ccm-layout-24-col-3 ccm-layout-cell ccm-layout-col ccm-layout-col-3 last" style="width:33.99%"><div class="column_container">
+	<div class="column">
+		<div class="column_header">
+			<div class="column_header_text">Review Store</div>
+		</div>
+		<div class="column_instructions" id="review_instructions">Or just click<br/>on an item for more<br/>details.</div>
+		<div class="column_content" id="review_content"></div>
+	</div>
+</div>
+
+</div><div class="ccm-spacer"></div></div></div></div><script id="item_template" type="text/x-jquery-tmpl">
+	<div class="item_content" onmouseover="$('.item_menu_'+${id}).show();" onmouseout="$('.item_menu_'+${id}).hide();">
+		<div class="item_image_container">
+			<img class="item_image" src="http://api.searchbitcoin.com/services/image/${id}" />
+		</div>
+		<div class="item_text_container">
+			<div class="item_title">${title}</div>
+			<div class="item_domain">${domain}</div>
+		</div>
+		<div class="item_menu item_menu_${id}">
+			<span class="min-button item_menu_buy" onclick="window.open('${url}');">Visit Store</span>
+			<span class="item_menu_review min-button" onclick="review(${id});">Seller Reviews</span>
+		</div>
+	</div>
+	<hr/>
+</script>
+
+<script id="message_template" type="text/x-jquery-tmpl">
+	<div id="search_message">${message}</div>
+</script>
+
+<script id="search_more_template" type="text/x-jquery-tmpl">
+	<div class="min-button" id="search_more">Show More Results</div>
+</script>
+
+<script id="review_vendor_template" type="text/x-jquery-tmpl">
+	<div id="review_vendor">
+		<div class="review_row">
+			<span class="review_label">Title:&nbsp;</span>
+			<div class="review_data">${title}</div>
+		</div>
+		<div class="review_row">
+			<span class="review_label">Website:&nbsp;</span>
+			<div class="review_data"><a href="${url}" target="_blank">${domain}</a></div>
+		</div>
+		<div class="review_row">
+			<span class="review_label">Logo:&nbsp;</span>
+			<div class="review_data">
+				<a href="${url}" target="_blank">
+					<img src="http://api.searchbitcoin.com/services/image/${id}" />
+				</a>
+				<br/>
+			</div>
+		</div>
+	</div>
+	<div id="review_comments"></div>
+</script>
+
+<p style="text-align: center;">&nbsp;</p>
+<p style="text-align: center;"><span style="font-size: medium;"><em>Search Bitcoin</em> is committed to helping people discover merchandise and services available in the bitcoin community.</span></p>
+<p style="text-align: center;"><span style="font-size: medium;"><span>Our database is comprehensive, and includes every item for sale in nearly every store.</span></span></p>	</div>
+
+
+<br style="clear: both;" /><br />
+	<br style="clear: both;" />
+	
+	</div>
+	
+</div>
+
+	<div id="footer">
+	<div class="inner-footer">
+	<span class="powered-by"><a href="http://www.concrete5.org" title="concrete5 - open source content management system for PHP and MySQL">concrete5 - open source CMS</a></span>
+			&copy; 2011 <a href="/">Search Bitcoin</a>.
+			&nbsp;&nbsp;
+			All rights reserved.							<span class="sign-in"><a href="/index.php/login/">Sign In to Edit this Site</a></span>
+			</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23915821-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></body>
+</html>";

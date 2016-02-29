@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+/* Body Wraps
+------------------------------------------------------------------------
+Name:			OAF_SmoothSilver
+Release:		05/11/2010
+Columns:		Two
+Width:		Fixed
+Copyright:		OAfreelancer.com (Omar Abdirahman, London UK) */
+
+/* Colors
+------------------------------------------------------------------------
+Background:		#e8e8e8e
+Fonts:		#212121
+Links:		#0099ff border-bottom dotted
+Link visited:	#0099ff border-bottom solid
+Border:		#c8c8c8
+Heading 1:		#0099ff
+Heading 2:		#666666
+Top & Footer:	#cccccc */
+
+/* Body & Wraps Links Setup
+------------------------------------------------------------------------*/
+p{
+text-align:left;
+}
+
+#right_content h1, #left_content h1{
+color:#0099ff;
+font-size:14pt;
+}
+
+#right_content h1, #left_content h2{
+color:#666666;
+font-size:12pt;
+}
+
+img{
+border:none;
+}
+
+#clear{
+clear:both;
+}
+
+ul li{
+margin:0; padding:0;
+list-style-type:square;
+}
+
+#wrap a, #footer a, #wrap a:visited, #footer a:visited{
+border-bottom:1px dotted #999999;
+text-decoration:none;
+color:#212121;
+}
+
+#wrap a:hover, #footer a:hover{
+border-bottom:1px solid #0099ff;
+text-decoration:none;
+color:#0099ff;
+}
+
+
+/* Body & Wraps
+------------------------------------------------------------------------*/
+body{
+margin:0px;width:100%;
+text-align: center;
+}
+
+body{
+font-size:90%;
+font-family:Verdana, Geneva, Tahoma, sans-serif;
+background:#e8e8e8 url(images/bg.bmp) repeat center;
+}
+
+#wrap{
+width:930px;
+min-height:400px; /* in case of height is not working, delete this snippet code */
+padding:10px;
+margin-bottom:20px;
+margin-top:0px;
+margin-left:auto;
+margin-right:auto;
+background:#fff;
+border-top:2px solid #c8c8c8;
+border-right:1px solid #c8c8c8;
+border-bottom:1px solid #c8c8c8;
+border-left:1px solid #c8c8c8;
+text-align:left;
+}
+
+
+/* Header, Logo, Nav
+------------------------------------------------------------------------*/
+#header{
+width:100%;min-width:960px;
+height:120px;
+background:#f1f1f1 url(images/head-content.png) top center repeat-x;
+border-bottom:1px solid #c8c8c8;
+}
+
+#logo{
+float:left;
+width:200px;
+}
+
+#logo h1{
+color:#0099ff;
+font-size:14pt;
+margin:20px 0 0 20px;
+}
+
+#nav{
+float:right;
+width:610px;
+margin:20px 20px 0 0;
+}
+
+#nav ul{
+list-style-type:none;
+float:left;
+width:100%;
+margin:0;padding:0;
+}
+
+#nav ul li{
+display:inline;
+}
+
+#nav ul li a{
+float:left;
+width:120px;
+height:40px;
+line-height:40px;
+background:url(images/nav.png) repeat-x center;
+color:#999999;
+text-decoration:none;
+text-align:center;
+margin-left:2px;
+border:none;
+font-size:80%;
+}
+
+#nav ul li a:hover{
+background:url(images/nav-hover.png) repeat-x center;
+color:#212121;
+}
+
+#nav a.nav-selected{
+background:url(images/nav-hover.png) repeat-x center;
+color:#212121;
+}
+
+/* Mini Head
+------------------------------------------------------------------------*/
+#mini_head{
+width:930px;
+height:220px;
+padding-top:1px;
+padding-right:10px;
+padding-bottom:10px;
+padding-left:10px;
+background:#f1f1f1 url(images/head-content.png) repeat-x center top;
+margin:0 auto;
+text-align:left;
+border-top:none;
+border-right:1px solid #c8c8c8;
+border-bottom:none;
+border-left:1px solid #c8c8c8;
+white-space:normal;
+font-size:12pt;
+}
+
+#mini_head h2{
+color:#0099ff;
+}
+
+#mini_head img{
+vertical-align:text-top;
+padding-right:15px;
+float:left;
+}
+
+/* Content
+------------------------------------------------------------------------*/
+#wrap #content_area{
+width:930px;min-width:960px;
+text-align:left;
+margin:0 auto;
+}
+
+/* #wrap #content_area img{
+border:none;
+vertical-align:text-top;
+padding-right:15px;
+} */
+
+#wrap #right_content, #wrap #right_sidebar{
+float:right;
+}
+
+#wrap #left_content, #wrap #left_sidebar{
+float:left;
+}
+
+#wrap #right_content, #wrap #left_content{
+width:580px;
+}
+
+#wrap #right_content a:link, #wrap #left_content a:link, #wrap #content_area a:link{
+border:none;
+}
+
+#wrap #right_sidebar, #wrap #left_sidebar{
+width:300px;
+padding-left:15px;
+color:#999999;
+}
+
+#wrap #right_content, #wrap #left_content h2{
+text-align:left;
+color:#212121;
+}
+
+#wrap #left_sidebar h2{
+text-align:left;
+height:40px;
+line-height:40px;
+background:url(images/sb-header.png) no-repeat center;
+text-indent:15px;
+}
+
+#wrap #right_sidebar h2{
+text-align:left;
+height:40px;
+line-height:40px;
+background:url(images/sb-header.png) no-repeat center;
+text-indent:15px;
+}
+
+#right_sidebar{
+border-left:1px solid #c8c8c8;
+}
+
+#left_sidebar{
+border-right:1px solid #c8c8c8;
+}
+
+/* Forms
+------------------------------------------------------------------------*/
+
+
+/* Footer
+------------------------------------------------------------------------*/
+#footer{
+width:100%;min-width:960px;
+height:100px;
+padding-top:10px;padding-bottom:10px;
+text-indent:10px;
+background:#f1f1f1 url(images/head-content.png) repeat-x center;
+font-size:80%;
+color:#888888;
+}

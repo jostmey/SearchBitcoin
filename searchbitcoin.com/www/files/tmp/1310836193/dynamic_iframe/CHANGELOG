@@ -1,0 +1,13 @@
+1.5 - Fix a bug with query string
+1.4 - Add query string GET management
+1.2 - Fix String.trim() not supported by IE and frame.onload = startResize not supported in IE in document body
+1.1 - Fix adjh on view.php, if $adjustheight then empty too and multiple startResize() calls
+1.0 - First release
+0.8 - Validate required fields presence
+0.7 - Adjust height value
+0.6 - Re calculate hight when iframe content is loaded or reloaded
+0.5 - Show error when redirection is not on same domain
+0.4 - Enable/Disable height when dynamic height is selected
+0.3 - Add script to resize the iframe
+0.2 - Added dynamic height
+0.1 - Initial Release - based on iframe by Remo Laubacher

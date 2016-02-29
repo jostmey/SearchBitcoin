@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btDynamicIframe">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="url" type="C" size="255"></field>
+		<field name="width" type="C" size="10"></field>
+		<field name="height" type="C" size="10"></field>
+		<field name="dynamicheight" type="I">
+			<default value="1"/>
+		</field>
+		<field name="errorheight" type="C" size="10"></field>
+		<field name="adjustheight" type="C" size="10">
+			<default value="0"/>
+		</field>
+		<field name="getqs" type="I">
+			<default value="0"/>
+		</field>		
+		<field name="frameborder" type="I"></field>
+		<field name="marginwidth" type="C" size="10"></field>
+		<field name="marginheight" type="C" size="10"></field>
+		<field name="scrolling" type="C" size="10"></field>
+		<field name="align" type="C" size="10"></field>
+		<field name="marginheight" type="C" size="10"></field>
+		<field name="id" type="C" size="255"></field>
+		
+	</table>
+</schema>

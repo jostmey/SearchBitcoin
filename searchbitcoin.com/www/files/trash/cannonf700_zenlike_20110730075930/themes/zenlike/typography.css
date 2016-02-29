@@ -1,0 +1,129 @@
+/*
+	zenlike1.0 by nodethirtythree design
+	http://www.nodethirtythree.com
+*/
+
+*
+{
+padding: 0px auto;
+margin: 0px auto;
+}
+
+body,input
+{
+font-size: 10pt;
+font-family: "georgia", "times new roman", serif;
+color: #333333;
+}
+
+input {margin-bottom:5px;}
+p
+{
+line-height: 1.5em;
+margin-bottom: 1.0em;
+}
+
+a
+{
+color: #B96D00;
+text-decoration: underline;
+}
+
+a:hover
+{
+text-decoration: none;
+}
+
+#wrapper h1
+{
+font-size: 2.0em;
+margin-bottom:10px;}
+
+#wrapper h2
+{
+font-size: 1.8em;
+margin-bottom:5px;}
+
+#wrapper h3,h4
+{
+display: inline;
+font-weight: bold;
+background-repeat: no-repeat;
+background-position: right;
+margin-bottom:5px;
+}
+
+#wrapper h3
+{
+font-size: 1.6em;
+padding-right: 34px;
+background-image: url(images/db1.gif);
+}
+
+#wrapper h4
+{
+font-size: 1.2em;
+padding-right: 28px;
+background-image: url(images/db2.gif);
+}
+
+.contentarea
+{
+padding-top: 1.0em;
+}
+
+.left
+{
+position: relative;
+float: left;
+margin: .5em 1.8em 1.4em 0em;
+}
+
+.right
+{
+position: relative;
+float: right;
+margin: 0em 0em 1.8em 1.8em;
+}
+
+.divider1
+{
+position: relative;
+background: #fff url(images/border2.gif) repeat-x;
+height: 14px;
+margin: 2.0em 0em 1.5em 0em;
+clear: both;
+}
+
+.divider2
+{
+position: relative;
+height: 1px;
+border-bottom: solid 1px #eaeaea;
+margin: 2.0em 0em 2.0em 0em;
+}
+
+.post .details
+{
+position: relative;
+top: -1.5em;
+font-size: 0.8em;
+color: #787878;
+}
+
+.post a.more
+{
+background-image: url(images/icon-more.gif);
+}
+
+.box
+{
+position: relative;
+background: #FDFCF6 url(images/boxbg.gif) repeat-x;
+left: -1.5em;
+top: -1.5em;
+padding: 1.5em;
+border-bottom: solid 1px #E1D2BD;
+margin-bottom: 1.0em;
+}
+

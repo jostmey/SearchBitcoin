@@ -1,0 +1,118 @@
+/* *** css by miss monorom www.intensivstation.ch *** */
+/* css released under Creative Commons License -  http://creativecommons.org/licenses/by/2.0/deed.en  */
+
+img.download {
+	vertical-align:middle;
+}
+
+/* ----------container to center the layout-------------- */
+#container {
+	width: 760px;
+	margin-left: auto;
+	margin-right: auto;
+	height:100%;
+	background: #E8E8E8 url('images/menubottom.jpg') no-repeat bottom left;
+	border:1px solid #8D8D8D;
+}
+
+/* ----------banner for logo-------------- */
+
+#banner {
+	height:114px;
+	text-align: center;
+	background:  url('images/header.jpg') no-repeat bottom center;
+	background-color: #e1ddd9;
+	padding: 0px;
+	margin: 0px;
+}
+
+#banner img {
+	padding:10px 0px;
+} 
+
+#bannertitle{
+	padding-top:50px;
+	font-size:32px;
+	line-height:38px;
+	font-weight:bold;
+}
+
+#bannertitle a{ text-decoration:none; color:inherit }
+
+/* -----------------content--------------------- */
+#content {
+	background:#ffffff  url('images/content.jpg') no-repeat top right;
+	padding: 0px; 
+	float: right; 	
+}
+
+div#content { 
+	min-height:100px;
+	width: 538px;
+	padding:10px;
+/*height:expression(this.scrollHeight > 600 ? "auto":"600px"); */
+}
+
+div#content a{ 
+	/*
+	min-height:600px;
+	width: 558px;
+	*/ 
+/*height:expression(this.scrollHeight > 600 ? "auto":"600px"); */
+}
+
+/* --------------left navi------------- */
+#left {
+	float: left;
+	width: 200px;
+	margin: 0px;
+	padding: 0px;
+	background:#E8E8E8;
+ 	height:auto;
+}
+
+/* -----------footer--------------------------- */
+#footer {
+	clear: both;
+	margin: 0px;
+	padding:0px; 
+	text-align: right; 
+	background:  url('images/footer.gif') repeat-x ;
+}
+#footer {
+ 	color:#333333;
+	font-size:11px; line-height:14px;
+	padding:8px; 
+}
+  
+#footer #powered-by{ float:right; text-align:right; }
+
+#footer #footerLinks{ text-align:left; }
+
+
+ /**********vertical menu***************/
+.verticalmenu ul{
+ 	list-style:none;
+/*list-style-image: url("bullet.gif")*/
+ 	padding: 10px;
+ 	margin: 0px;
+}
+
+.verticalmenu li{
+	width: 140px;
+	height: 32px; 
+}
+
+.verticalmenu li,div#page a:link, .verticalmenu a:visited, .verticalmenu a:hover {  
+   text-decoration: none;
+   text-align: left;   
+   /*background: url('menuhover.gif') no-repeat;*/
+ }
+
+ .verticalmenu a:hover{
+   background: url('images/menuhover.gif') no-repeat;
+   color: #dc4d1b;
+ }
+ 
+ .spacer{ clear:both; font-size:1px; line-height: 1px; }
+ 

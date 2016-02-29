@@ -1,0 +1,289 @@
+/******************************************************************
+
+Theme: Rigid
+Variant: Light
+Author: Michael Grissinger
+Version: 1.0
+
+*******************************************************************/
+
+/** Reset Minimized ***********************************************/
+/******************************************************************/
+@charset"utf-8";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,button{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section{display:block}button{cursor:pointer}hr{margin:0;padding:0}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}label, input[type=button], input[type=submit], button { cursor: pointer; }
+
+
+/** Sitewide Styles ***********************************************/
+/******************************************************************/
+
+body { background: #c6c1b0; font: 13px/18px Arial, Helvetica, sans-serif; color: #525252; }
+a { text-decoration: underline; }
+a:hover { text-decoration: none; }
+.container { margin: 0 auto; position: relative; width: 990px; }
+.img_left { float: left; margin: 0 25px 5px 0; }
+.img_right { float: right; margin: 0 0 5px 25px; }
+.clear { clear: both; }
+.twoCols { width: 50%; float: left; }
+.hidden { display: none; visibility: hidden; } 
+.invisible { visibility: hidden; }
+
+
+::-moz-selection{ background: #555; color:#fff; text-shadow: none; }
+::selection { background:#555; color:#fff; text-shadow: none; } 
+
+.cufon-loading .largeGreen, .cufon-loading .largeGrey, .cufon-loading #mainNav>ul>li>a, 
+.cufon-loading .powerPhraseDetails, .cufon-loading #mainShell h1, .cufon-loading #mainShell h2 { visibility: hidden; }
+
+/** Header Styles *************************************************/
+/******************************************************************/
+
+header { height: 456px; padding: 122px 0 0; position: relative; z-index: 3; background: url(../img/bgHeader.jpg) top center; }
+body.subpage header { height: 180px; }
+
+	#logo { position: absolute; top: 30px; left: 0; }
+	
+		.simple-logo-block { text-decoration: none; }
+			.simple-logo-block .largeWhite { font-size: 62px; color: #fff; font-weight: normal; }
+			.simple-logo-block .largeYellow { font-size: 62px; color: #8c8671; font-weight: bold; }
+			.simple-logo-block .logoSubtitle { font-size: 14px; color: #fff; display: block; }
+		
+	header nav { position: absolute; top: 48px; right: 0; z-index: 9; }
+		
+		header nav ul {  }
+		header nav ul li { float: left; position: relative; border: 1px solid transparent; }
+		header nav ul li.lastItem { background: none; }
+		header nav ul li a { display: block; color: #8c8671; font-size: 24px; height: 24px; padding: 8px 17px 10px 15px; text-decoration: none; font-weight: bold; }
+		header nav ul li:hover, header nav ul li.nav-selected, header nav ul li.nav-path-selected { background: url(../img/bgNavLiActive.jpg); border-color: transparent #fff #fff transparent; }
+		header nav ul li a:hover {  }
+		
+			header nav ul ul { display: none; position: absolute; top: 40px; left: 0; width: 170px; padding: 10px 15px; background: #c4bfac; -moz-box-shadow: 2px 2px 3px rgba(0,0,0,0.5); -webkit-box-shadow: 2px 2px 3px rgba(0,0,0,0.5); box-shadow: 2px 2px 3px rgba(0,0,0,0.5); }
+			header nav ul li:hover ul { display: block; }
+			header nav ul li ul li { float: none; background: none; padding: 0 5px; }
+			header nav ul li ul li a { font-size: 14px; color: #fff; display: block; position: relative; font-size: 14px; height: auto; padding: 4px 0; -moz-text-shadow: 1px 1px 0 #8c8671; -webkit-text-shadow: 1px 1px 0 #8c8671;text-shadow: 1px 1px 0 #557904; }
+			header nav ul li ul li:hover, header nav ul li ul li.nav-selected  { background: #b1aa91; border-color: transparent #d0cdbe #d0cdbe transparent; }
+			
+	#vignetteShell { width: 990px; height: 180px; overflow: hidden; }
+	body.homepage #vignetteShell { height: 456px }
+
+		#powerSliderShell {  }
+		
+			#powerSliderContainer {  }
+			
+				.powerSlide { text-decoration: none; position: relative; display: block; }
+					
+					.powerSlide img {  }
+					.powerSlide .largeText { display: block; background: url(../img/bgBlack40.png); border: 1px solid; border-color: transparent #000 #000 transparent; color: #fff; position: absolute; top: 278px; text-align: center; font-size: 72px; line-height: 55px; width: 620px; left: 182px; }
+					.powerSlide .smallText { display: none; }
+			
+			#powerSliderPagination {  }
+			
+			#powerSliderNext, #powerSliderPrev {  }
+			#powerSliderNext {  }
+			#powerSLiderPrev {  }
+		
+
+
+/** Body/Content Styles *******************************************/
+/******************************************************************/
+
+#mainShell { background: #f5f2e9 url(../img/bgBody.gif) bottom center repeat-x; center 50px no-repeat; margin: -45px 0 0; padding: 45px 0 0; z-index: 2; }
+
+	#mainShell .container { border: 1px solid #dad7cf; width: 944px; padding:25px 22px 25px; background: #fff; }
+		
+	
+		/** General Content Elements ******************************/
+		/**********************************************************/
+		
+		#mainShell  hgroup {  }
+		#mainShell  h1 { font-size: 40px; color: #78a800; margin: 0 0 27px; }
+		#mainShell  h2 { font-size: 30px; color: #9b9266; margin: 0 0 10px; }
+		#mainShell  h1+h2 { margin: -20px 0 20px; }
+		#mainShell  h3 {font-size: 24px; color: #444; margin: 20px 0 5px; }
+		#mainShell  p { margin: 0 0 15px; }
+		#mainShell  a { color: #769725; }
+		#mainShell  a:hover {  }
+		#mainShell  strong {  }
+		#mainShell  em {  }
+		#mainShell  blockquote {  }
+		#mainShell  ul, #mainShell ol { margin: 15px 0 15px 15px; }
+		#mainShell  ul ul, #mainShell ol ol { margin: 5px 0 5px 20px; }
+		#mainShell  ul {  }
+		#mainShell  li {  }
+		#mainShell  ul li { list-style: disc; }
+		#mainShell  li li { list-style: square; }
+		#mainShell  li li li { list-style: circle; }
+		#mainShell  ul li a {  }
+		#mainShell  ol {  }
+		#mainShell  ol li { list-style: decimal; }
+		#mainShell  ol ol {  }
+		#mainShell  dl { margin: 15px 0; }
+		#mainShell  dl dt { font-weight: bold; }
+		#mainShell  dl dd { margin: 0 0 0 25px; }
+		#mainShell  hr {  }
+		#mainShell  img {  }
+		#mainShell  hr { margin: 15px 0; }
+	
+		/** Form Elements ******************************************/
+		/***********************************************************/
+		
+		#mainShell  form {  }
+		#mainShell  fieldset {  }
+		#mainShell  label {  }
+		#mainShell  input, #mainShell  textarea, #mainShell  select {  }
+		#mainShell  input {  }
+		#mainShell  input[type="submit"] {  }
+		#mainShell  textarea {  }
+		#mainShell  select {  }
+		
+			
+	#ctaShell { padding: 0 0 25px; overflow: auto; border-bottom: 1px solid #dad7c5; margin: 0 0 50px; }
+	body.subpage #ctaShell { border-bottom: none; border-top: 1px solid #dad7c5; margin: 50px 0 0; padding: 25px 0; }
+	
+		#ctaShell .cta { width: 222px; float: left; margin-left: 20px; padding: 0 0 0 78px; background-position: 15px 0; background-repeat: no-repeat; }
+		#ctaShell .cta:first-child { margin: 0; }
+		#ctaShell .cta.cta1 { background-image: url(../img/bgCta1.gif); }
+		#ctaShell .cta.cta2 { background-image: url(../img/bgCta2.gif); }
+		#ctaShell .cta.cta3 { background-image: url(../img/bgCta3.gif); }
+		
+			#ctaShell .ctaTitle { font-size: 32px; color: #6a6352; display: block; margin: 0 0 12px; }
+			#ctaShell .ctaDesc { font-size: 12px; color: #99968f; display: block; margin: 0 0 20px; }
+			#ctaShell .cta a { display: block; width: 109px; height: 27px; background: url(../img/btnCtaReadMore.gif) left top; line-height: 0; text-indent: -9999em; }
+			#ctaShell .cta a:hover { background-position: left bottom; }
+	
+	#headerShadow { background: url(../img/bgContent.jpg) top center no-repeat; height: 50px; margin: 0 0 15px; }
+	
+	#main { width: 620px; float: left; margin: 0 60px 0 0; }
+	body.full #main { width: auto; float: none; margin: 0; }
+	
+	#sidebar { width: 260px; float: left; }
+	
+		#sidebar h2 { margin: 0 0 27px; }
+		
+	/** Demo Styles ***********************************************/
+	/**************************************************************/
+	
+	.sortable_fancybox_gallery_container { float: none; margin: 0 0 20px; overflow: auto; }
+	.ccm-remo-expand { margin: 0 0 15px; }
+	.ccm-remo-expand-content { margin: 15px 0; }
+	#mainShell .ccm-jereme-tweet-follow-link { float: none; margin-top: 10px; color: #fff; }
+	#mainShell .ccm-jereme-tweetcrete-timeline ul { margin: 15px 0; }
+	#mainShell .ccm-jereme-tweetcrete-timeline ul li { list-style: none; }
+	
+
+/** Footer Styles *************************************************/
+/******************************************************************/
+
+footer.container { z-index: 1; padding: 25px 0 45px; }
+
+	footer nav {  }
+	
+		footer nav ul { text-align: center; }
+		footer nav ul li { display: inline; font-size: 18px; -moz-text-shadow: 1px 1px 0 #000; -webkit-text-shadow: 1px 1px 0 #fff; text-shadow: 1px 1px 0 #fff; color: #8c8671; }
+		footer nav ul li a { color: #8c8671; text-decoration: none; }
+		footer nav ul li a:hover { text-decoration: underline; }
+
+	footer .vcard { color: #5d5845; font-size: 12px; text-align: center; margin: 20px 0; }
+		footer .fn.org { font-weight: bold; }
+		footer .adr {  }
+			footer .street-address {  }
+			footer .locality {  }
+			footer .region {  }
+			footer .postal-code {  }
+		footer .tel {  }
+			footer. .type {  }
+			footer .value {  }
+	
+	#vivid { text-align: center; }
+		#vivid a { color: #5d5845; }
+	
+	
+/** Add Z-Index to C5 highlighter **********************************/
+/*******************************************************************/
+
+div#ccm-highlighter { z-index: 15 !important; }
+
+/** Remove the subtitle option from Power Slider *******************/
+/*******************************************************************/
+
+label[for="powerSlidePhraseDesc[]"], label[for="powerSlidePhraseDesc[]"] + input { display: none !important; }
+	
+/*
+ * Media queries for responsive design
+ * These follow after primary styles so they will successfully override. 
+ */
+
+@media all and (orientation:portrait) { 
+  /* Style adjustments for portrait mode goes here */
+  
+}
+
+@media all and (orientation:landscape) { 
+  /* Style adjustments for landscape mode goes here */
+  
+}
+
+/* Grade-A Mobile Browsers (Opera Mobile, iPhone Safari, Android Chrome)  
+   Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+@media screen and (max-device-width: 480px) {
+  
+  
+/* Uncomment if you don't want iOS and WinMobile to mobile-optimize the text for you  j.mp/textsizeadjust 
+  html { -webkit-text-size-adjust:none; -ms-text-size-adjust:none; } 
+*/
+.container { width: 319px !important; }
+
+	header { height: auto; padding: 20px 0 0; background: none; }
+	
+		#logo { position: static; margin: 0 0 25px; }
+		
+		#mainNav { position: static !important; }
+		
+			#mainNav ul { margin: 0 !important; padding: 0 !important; }
+			#mainNav ul li { float: none; margin: 0 !important; padding: 0 !important; background: none; }
+			#mainNav ul li a {  }
+			
+				#mainNav ul ul { position: static; background: #000; margin-left: 20px; width: auto; }
+		
+		#searchShell { display: none; }
+	
+	#vignetteShell { display: none;  }
+	
+	#mainShell { margin: 0; }
+	
+		#mainShell .container { padding: 25px 0; }
+	
+			#headerShadow, #ctaShell { display: none; }
+		
+			#main { width: auto; float: none; padding: 0 15px; margin: 0; border: none; }
+			
+			#sidebar { margin: 0; padding: 0 15px; width: auto; }
+	
+	footer.container {  }
+
+}
+
+/* 
+ * print styles
+ * inlined to avoid required HTTP connection www.phpied.com/delay-loading-your-print-css/ 
+ */
+@media print {
+  * { background: transparent !important; color: #444 !important; text-shadow: none !important; line-height: 1; }
+  body { font-size: 14px; }
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a:after { content: " (" attr(href) ")"; } 
+  abbr:after { content: " (" attr(title) ")"; }
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */ 
+  tr, img { page-break-inside: avoid; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+  
+  header { height: auto; }
+  #logo {  }
+  	.simple-logo-block { text-decoration: none; line-height: 1; }
+		#logo .largeGreen { font-size: 36px; }
+		#logo .largeGrey { font-size: 24px; }
+		#logo .logoSubtitle { font-size: 14px; }
+  #mainNav, #vignetteShell, #sliderShell, #ctaShell, footer nav { display: none !important; }
+  
+}

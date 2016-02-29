@@ -1,0 +1,338 @@
+/* -------------------------------------------------------------- 
+  
+   Viva CSS Framework
+   E-Mail: hello@vivatemplates.com
+   
+   www.vivatemplates.com
+   
+   Theme: Minified
+   CMS: Concrete5
+   
+-------------------------------------------------------------- */
+
+@import "css/reset.css";
+@import "css/forms.css";
+
+
+/* General
+-------------------------------------------------------------- */
+
+html,body {
+	height: 100%;
+	width: 100%;
+}
+
+/* CHANGE */
+
+body {
+	/* customize_background_color */	background-color: #ececec;	/* customize_background_color */ 
+}
+
+#wrapper {
+	width: 1040px;
+	margin: 0 auto;
+	min-height: 100%;
+	background: transparent url(images/background.png) repeat-y;
+}
+
+#content {
+	padding: 20px 40px;
+}
+
+#header {
+	height: 85px;
+	position: relative;
+	border-bottom: 1px solid #dfdfdf;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+}
+
+#top-text {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+}
+
+#slideshow {
+	height: 350px;
+	width: 100%;
+	border-bottom: 1px solid #efefef;
+	margin-bottom: 40px;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+#home-center {
+	border-bottom: 1px solid #efefef;
+	padding-bottom: 20px;
+	margin-bottom: 10px;
+}
+
+.home-left {
+	width: 250px;
+	padding-top: 10px;
+	float: left;
+	min-height: 200px;
+}
+
+.home-box {
+	border: 1px solid #efefef;
+	float: left;
+	width: 190px;
+	padding: 10px;
+	min-height: 200px;
+}
+
+.home-box:hover {
+	border: 1px solid #ddd;
+}
+
+.box-1 {
+	margin-left: 20px;
+}
+
+.box-2 {
+	margin-left: 30px;
+}
+
+.box-3 {
+	float: right;
+}
+
+#text-placeholder {
+	position: absolute;
+	top: 80px;
+	right: 0;
+	width: 385px;
+	height: 220px;
+	background: url(images/black_bg.png);
+	z-index: 5;
+}
+.inner-text {
+	padding: 20px;
+	color: #eee;
+}
+.inner-text p {
+	color: #eee;
+}
+.inner-text a:hover {
+	color: #fff;
+}
+.inner-text h2 {
+	color: #fff;
+	font-size: 32px;
+}
+
+#home-text-right {
+	width: 670px;
+	padding-left: 10px;
+	padding-right: 10px;
+	float: right;
+	border-left: 1px solid #efefef;
+}
+
+/* FOOTER
+-------------------------------------------------------------- */
+
+#footer {
+	width: 1040px;
+	margin: 0 auto;
+	padding-top: 20px;
+	background: transparent url(images/background.png) repeat-y;
+}
+
+.inner-footer {
+	border-top: 1px solid #efefef;
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px 0px 20px 0px;
+}
+
+#image-placeholder {
+	width: 960px;
+	margin-bottom: 20px;
+}
+
+/* FORMS */
+
+#wrapper .formBlockSurveyTable {
+	width: 100%;
+}
+
+#wrapper input[type=text] {
+	background: #fff url(images/field-bg.gif) repeat-x top left;
+	outline: 0;
+	height: 18px;
+	line-height: 18px;
+	font-size: 12px;
+	color: #333;
+	border: 1px solid #ddd;
+	padding: 5px;
+	width: 70%;
+}
+
+#wrapper textarea {
+	background: #fff url(images/field-bg.gif) repeat-x top left;
+	outline: 0;
+	font-size: 12px;
+	color: #333;
+	border: 1px solid #ddd;
+	padding: 5px;
+	width: 70%;
+}
+
+#sidebar {
+	width: 220px;
+}
+
+#sub-content-right {
+	width: 710px;
+	padding-left: 20px;
+}
+
+#sub-content-left {
+	width: 710px;
+	padding-right: 20px;
+}
+
+#sub-content-full {
+	width: 100%;
+}
+
+.sidebar-left, .content-left {
+	float: left;
+}
+
+.content-right, .sidebar-right {
+	float: right;
+}
+
+/* NAVIGATION */
+
+#navigation {
+	position: absolute;
+	bottom: 10px;
+	right: 0;
+}
+
+/* remove the list style */
+	#nav {
+		margin:0; 
+		padding:0; 
+		list-style:none;
+	}	
+	
+		/* make the LI display inline */
+		/* it's position relative so that position absolute */
+		/* can be used in submenu */
+		#nav li {
+			float:left; 
+			display:block; 
+			position:relative;
+			z-index: 10; 
+			margin:0 16px;
+		}
+		
+		/* this is the parent menu */
+		#nav li a {
+			display:block; 
+			padding:8px 5px 0 5px; 
+			font-weight:700;  
+			height:23px; 
+			text-decoration:none; 
+			color:#fff; 
+			text-align:left; 
+			color:#000;
+			text-transform: uppercase;
+		}
+
+		#nav li a:hover {
+			/* customize_navigation_hover_color */	color:#00d2d9;	/* customize_navigation_hover_color */
+		}
+	
+		/* you can make a different style for default selected value */
+		#nav a#nav-selected {
+			/* customize_navigation_current_color */	color:#00d2d9;	/* customize_navigation_current_color */
+		}
+	
+		/* submenu, it's hidden by default */
+		#nav ul {
+			position:absolute; 
+			left:0; 
+			display:none; 
+			margin:0 0 0 -1px; 
+			padding:0; 
+			list-style:none;
+			border-top: 1px solid #f7f7f7;
+			-webkit-box-shadow: rgba(0, 0, 0, 0.296875) 0px 2px 6px;
+			-moz-box-shadow: rgba(0, 0, 0, 0.296875) 0px 2px 6px;
+		}
+		
+		#nav ul li {
+			width:200px; 
+			float:left; 
+			margin:0 1px;
+		}
+		
+		#nav ul li ul {
+			display: none;
+			-webkit-box-shadow: none; 
+			-moz-box-shadow: none; 
+		}
+		
+		/* display block will make the link fill the whole area of LI */
+		#nav ul a {
+			display:block;  
+			height:15px;
+			padding: 8px 5px; 
+			color:#333;
+			border-left: 1px solid #f7f7f7;
+			border-bottom: 1px solid #f7f7f7;
+			border-right: 1px solid #f7f7f7;
+			background: #fff;
+		}
+		
+		#nav ul a:hover {
+			text-decoration: none;
+			background: #f7f7f7;
+			color: #000000;
+		}
+
+		/* fix ie6 small issue */
+		/* we should always avoid using hack like this */
+		/* should put it into separate file : ) */
+		*html #nav ul {
+			margin:0 0 0 -2px;
+		}
+
+/* Sidebar
+-------------------------------------------------------------- */
+
+#sidebar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid #efefef;
+}
+#sidebar ul li a {
+	display: block;
+	line-height: 30px;
+	height: 30px;
+	border-bottom: 1px solid #efefef;
+	padding-left: 20px;
+	background: url(images/arrow.png) no-repeat left;
+}
+
+#sidebar ul li a#nav-path-selected {
+	color: #000;
+}
+
+/* customize_miscellaneous */ /* customize_miscellaneous */
+
+/* Hacks by Jared Ostmeyer
+-------------------------------------------------------------- */
+
+/* Prevents text from flickering because of cufon. */
+/* Reference: "https://github.com/sorccu/cufon/issues/168" */
+.cufon-loading body { visibility: hidden }
+

@@ -1,0 +1,9 @@
+div.cai-image-with-caption {
+  text-align: center;
+  margin-bottom: 5px;
+}
+span.cai-caption {
+  line-height: 1.5em;
+  font-size: smaller;
+  font-style: italic;
+}

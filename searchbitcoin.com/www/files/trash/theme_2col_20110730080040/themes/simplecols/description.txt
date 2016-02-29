@@ -1,0 +1,2 @@
+Simple 2 Column Theme
+The Simple 2 Column Theme is a high contrast 2 column theme with a fixed footer.

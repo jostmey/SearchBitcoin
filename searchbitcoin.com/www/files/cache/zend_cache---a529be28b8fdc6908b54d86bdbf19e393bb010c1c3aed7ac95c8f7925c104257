@@ -1,0 +1,217 @@
+s:7964:"<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>Marketing Services</title>
+<meta name="description" content="Search Bitcoin provides some of the busiest websites with our search engine and live feed of bitcoin merchandise. We are ideally position to help you advertise your business. " />
+<meta name="keywords" content="Bitcoin, Marketing, Advertise" />
+<meta name="generator" content="concrete5 - 5.4.2" />
+
+<script type="text/javascript">
+var CCM_DISPATCHER_FILENAME = '/index.php';var CCM_CID = 99;var CCM_EDIT_MODE = false;var CCM_ARRANGE_MODE = false;var CCM_IMAGE_PATH = "/updates/concrete5.4.2/concrete/images";
+var CCM_TOOLS_PATH = "/index.php/tools/required";
+var CCM_REL = "";
+
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="/updates/concrete5.4.2/concrete/css/ccm.base.css?v=0474fb6fcadda943b96274f014fd981e" />
+<script type="text/javascript" src="/updates/concrete5.4.2/concrete/js/jquery.js?v=0474fb6fcadda943b96274f014fd981e"></script>
+<script type="text/javascript" src="/updates/concrete5.4.2/concrete/js/ccm.base.js?v=0474fb6fcadda943b96274f014fd981e"></script>
+<link rel="stylesheet" type="text/css" href="/updates/concrete5.4.2/concrete/blocks/slideshow/view.css?v=0474fb6fcadda943b96274f014fd981e" />
+
+<!-- CSS -->
+<link rel="stylesheet" media="screen" type="text/css" href="/index.php/tools/css/themes/minifiedtheme/main.css" />
+<link rel="stylesheet" media="screen" type="text/css" href="/index.php/tools/css/themes/minifiedtheme/typography.css" />
+
+<link rel="stylesheet" href="/packages/minifiedtheme/themes/minifiedtheme/print.css" media="print" type="text/css" />
+<link rel="stylesheet" href="/packages/minifiedtheme/themes/minifiedtheme/css/uniform.default.css" type="text/css" media="screen" charset="utf-8" />
+
+<!-- JavaScripts -->
+<script src="/packages/minifiedtheme/themes/minifiedtheme/js/cufon-yui.js" type="text/javascript"></script>
+<script src="/packages/minifiedtheme/themes/minifiedtheme/js/Museo_Sans_500.font.js" type="text/javascript"></script>
+<script src="/packages/minifiedtheme/themes/minifiedtheme/js/jquery.uniform.min.js" type="text/javascript"></script>
+<script src="/packages/minifiedtheme/themes/minifiedtheme/js/viva.js" type="text/javascript"></script>
+
+</head>
+
+<body>
+<div id="wrapper">
+	<div id="content">
+	
+	<div id="header">
+		<div class="logo">
+		<!--
+			--><a href="/" ><h1><p>Search Bitcoin</p></h1></a><!--
+			-->
+		</div>
+		
+		<div id="navigation">
+			<ul id="nav"><li class="nav-path-selected"><a class="nav-path-selected" href="/" >Home</a></li><li><a href="/learn-about-bitcoins/"  >Learn About Bitcoins</a></li><li><a href="/vendors/"  >Add Your Webpage</a></li><li><a href="/plugins/"  >Plugins</a><ul><li><a href="/plugins/btc-economy-plugin/"  >BTC Economy Plugin</a></li></ul></li><li><a href="/blog/"  >Blog</a><ul><li><a href="/blog/beyond-bitcoin-trading-an-experiment-is-born/"  >Beyond Bitcoin Trading - An Experiment Is Born</a></li><li><a href="/blog/most-sought-after-bitcoin-merchandise/"  >Most Sought After Bitcoin Merchandise</a></li></ul></li><li><a href="/contact-us/"  >Contact Us</a></li></ul>		</div>
+		
+		<div id="top-text">
+			
+<script type="text/javascript">
+//<![CDATA[
+var ccmSlideShowHelper2 = {
+
+	bID:2,
+	imgNum:0,
+	
+	init:function(){
+		this.displayWrap=$('#ccm-SlideshowBlock-display'+this.bID); 
+		if(this.imgInfos.length==0){
+			//alert('There are no images in this slideshow');
+			return false;
+		}
+		var maxHeight=0;
+		for(var i=0;i<this.imgInfos.length;i++){
+			this.addImg(i);
+			if(maxHeight==0 || this.imgInfos[i].imgHeight > maxHeight)
+				maxHeight=this.imgInfos[i].imgHeight;
+		}
+		this.displayWrap.css('height',maxHeight);
+
+		
+		//center images
+		for(var i=0;i<this.imgInfos.length;i++){ 
+			if( this.imgInfos[i].imgHeight < maxHeight){
+				var t=((maxHeight - this.imgInfos[i].imgHeight)/2);
+				this.imgEls[i].css('top',t);
+			}
+		}
+		this.nextImg();
+	}, 
+	nextImg:function(){ 
+		if(this.imgNum>=this.imgInfos.length) this.imgNum=0;  
+		this.imgEls[this.imgNum].css('opacity',0);
+		this.imgEls[this.imgNum].css('display','block');
+		this.imgEls[this.imgNum].animate({opacity:1},
+			this.imgInfos[this.imgNum].fadeDuration*1000,'',function(){ccmSlideShowHelper2.preparefadeOut()});
+		var prevNum=this.imgNum-1;
+		if(prevNum<0) prevNum=this.imgInfos.length-1;
+		if(this.imgInfos.length==1) return;
+		this.imgEls[prevNum].animate({opacity:0},this.imgInfos[this.imgNum].fadeDuration*800,function(){this.style.zIndex=1;});			
+	},
+	preparefadeOut:function(){
+		if(this.imgInfos.length==1) return;
+		var milisecDuration=parseInt(this.imgInfos[this.imgNum].duration)*1000;
+		this.imgEls[this.imgNum].css('z-index',2);
+		setTimeout('ccmSlideShowHelper'+2+'.nextImg();',milisecDuration);
+		this.imgNum++;
+	},
+	maxHeight:0,
+	imgEls:[],
+	addImg:function(num){
+		var el=document.createElement('div');
+		el.id="slideImgWrap"+num;
+		el.className="slideImgWrap"; 
+		if(this.imgInfos[num].fullFilePath.length>0)
+			 imgURL=this.imgInfos[num].fullFilePath;
+		else imgURL='/files/'+this.imgInfos[num].fileName; 
+		//el.innerHTML='<img src="'+imgURL+'" >';
+		el.innerHTML='<div style="height:'+this.imgInfos[num].imgHeight+'px; background:url(\''+escape(imgURL)+'\') center no-repeat">&nbsp;</div>';
+		//alert(imgURL);
+		if(this.imgInfos[num].url.length>0) {
+			//el.linkURL=this.imgInfos[num].url;
+			var clickEvent='onclick="return ccmSlideShowHelper2.imgClick( this.href  );"';
+			el.innerHTML='<a href="'+this.imgInfos[num].url+'" '+clickEvent+' >'+el.innerHTML+'</a>';			
+		}
+		el.style.display='none';
+		this.displayWrap.append(el);
+		var jqEl=$(el);
+		this.imgEls.push(jqEl);
+	},
+	imgClick:function(linkURL){
+		//override for custom behavior
+	},
+	imgInfos:[
+				{
+				fileName:"",
+				fullFilePath:"/files/",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:192			}
+		,			{
+				fileName:"",
+				fullFilePath:"/files/",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:215			}
+		,			{
+				fileName:"",
+				fullFilePath:"/files/",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:192			}
+		,			{
+				fileName:"",
+				fullFilePath:"/files/",
+				duration:5,
+				fadeDuration:2,		
+				url:"",
+				groupSet:0,
+				imgHeight:192			}
+			]
+}
+$(function(){ccmSlideShowHelper2.init();}); 
+//]]>
+</script>
+
+<div id="ccm-SlideshowBlock-display2" class="ccm-SlideshowBlock-display">
+<div id="ccm-SlideshowBlock-heightSetter2" class="ccm-SlideshowBlock-heightSetter"></div>
+<div class="ccm-SlideshowBlock-clear" ></div>
+</div>
+		</div>
+		
+	</div>
+	
+<div id="image-placeholder">
+	</div>
+<div id="sidebar" class="sidebar-right">
+	</div>
+
+<div id="sub-content-left" class="content-left">
+		<h1>Marketing Services</h1>
+	<p>This page is under construction.</p></div>
+
+
+<br style="clear: both;" /><br />
+	<br style="clear: both;" />
+	
+	</div>
+	
+</div>
+
+	<div id="footer">
+	<div class="inner-footer">
+	<span class="powered-by"><a href="http://www.concrete5.org" title="concrete5 - open source content management system for PHP and MySQL">concrete5 - open source CMS</a></span>
+			&copy; 2011 <a href="/">Search Bitcoin</a>.
+			&nbsp;&nbsp;
+			All rights reserved.							<span class="sign-in"><a href="/index.php/login/">Sign In to Edit this Site</a></span>
+			</div>
+</div>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-23915821-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script></body>
+</html>";

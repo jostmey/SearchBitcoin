@@ -1,0 +1,2 @@
+Lazydays
+This is a fluid layout, in orange and gray with header image of a city.

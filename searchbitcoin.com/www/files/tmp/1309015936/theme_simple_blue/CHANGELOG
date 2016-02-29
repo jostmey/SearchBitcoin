@@ -1,0 +1,2 @@
+1.0 - Initial release.
+1.1 - Fixed overflow bug in nav bar, added bottom margin to nav when in edit mode, added divider line under header

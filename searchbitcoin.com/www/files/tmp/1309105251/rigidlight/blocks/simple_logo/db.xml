@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<schema version="0.3">
+	<table name="btSimpleLogo">
+		<field name="bID" type="I">
+			<key />
+			<unsigned />
+		</field>
+		<field name="logoTitleWhite" type="X2">
+		</field>
+		<field name="logoTitleYellow" type="X2">
+		</field>
+		<field name="logoSubTitle" type="X2">
+		</field>
+		
+	</table>
+</schema>
