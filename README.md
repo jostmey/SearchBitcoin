@@ -11,4 +11,8 @@ Web service for finding items that can be bought using Bitcoins. A Web crawler u
 
 ## Setup
 
-The frontend server can be found in the folder `searchbitcoin.com`. Apache is used as the HTTP webserver, and the necessary files to configure the Apache server may be found in `searchbitcoin.com/config files`. The website was constructed using a Content Management System called concrete5. The code implementing concrete5 may be found in `searchbitcoin.com/www`, which has been configured to host the Search Bitcoin webpage. The Apache webserver expects the concrete5 files to be placed at `/var/www`.
+The frontend server can be found in the folder `searchbitcoin.com/`. Apache is used as the HTTP webserver, and the necessary files to configure the Apache server may be found in `searchbitcoin.com/config files/`. The website was constructed using a Content Management System called concrete5. The code implementing concrete5 may be found in `searchbitcoin.com/www/`, which has been configured to host the Search Bitcoin webpage. The Apache webserver expects the concrete5 files to be placed at `/var/www/`. The database for concrete5 runs on MySQL, and a copy has been saved in `searchbitcoin.com/concrete5 database/`.
+
+The backend API is found in the folder `api.searchbitcoin.com/`. The backend consists of several compontents...
+
+
